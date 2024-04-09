@@ -1,24 +1,15 @@
-collections:
-  authors:
-    output: true
+title: Nagymaros
+description: Jekyll theme for a conference website
+baseurl: ""
+url: https://piazzai.github.io/jekyll-nagymaros
 
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+theme: jekyll-nagymaros
 
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+copyright: Place Holder
+indexing: true
+
+permalink: pretty
+
+exclude:
+  - LICENSE
+  - README.md
