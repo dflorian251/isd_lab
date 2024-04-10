@@ -24,3 +24,21 @@
   telephone:
   website: https://scholar.google.gr/citations?user=tZAZEFUAAAAJ&hl=en
   avatar: /assets/images/karyotis.jpg
+
+- name: Dimitrios Ringas
+  rank: Laboratory Teaching Personnel
+  member: faculty
+  bio:
+  email: riggas@ionio.gr
+  telephone:
+  website:
+  avatar: /assets/images/riggas.jpg
+
+- name : John Brown
+  rank:
+  member: researcher
+  bio:
+  email: brown@ionio.gr
+  telephone:
+  website:
+  avatar: /assets/images/random_researcher.jpg

@@ -1,0 +1,51 @@
+.staff-list {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+
+.staff-list li {
+      margin-bottom: 1.5rem;
+      width: 300px;
+      height: 300px;
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.staff-list li:only-child {
+      align-self: flex-start;
+}
+
+.staff-list li .staff-avatar-container {
+      width: 200px;
+      height: 200px;
+      background-color: #f8f9fa;
+}
+
+.staff-list li .staff-avatar-container img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+}
+
+.staff-list li .staff-name-container {
+      margin-top: 0.5rem;
+      min-height: 67.2px;
+      display: flex;
+      align-items: center;
+}
+
+.staff-list li .staff-name-container .staff-name {
+      text-align: center;
+}
+
+.staff-list li .staff-name-container .staff-name a {
+      color: #343a40;
+}
+
+.staff-list li .staff-name-container .staff-name a:hover {
+      text-decoration: underline;
+}
