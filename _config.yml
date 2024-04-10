@@ -24,7 +24,7 @@ page_gen:
   - data: 'staff'
     template: 'profile'
     name: 'url'
-
+    title: 'name'
 
 
 copyright: ISD LAB

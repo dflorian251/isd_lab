@@ -23,7 +23,6 @@ navorder: 1
         </h3>
       </div>
       <p>{{ staff.rank }}</p>
-      <p>{{ staff.bio }}</p>
     </li>
   {% endfor %}
 </ul>
