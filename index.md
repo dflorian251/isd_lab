@@ -1,16 +1,36 @@
 ---
 layout: index
-title: ISD Lab
-description: A simple Jekyll theme for a conference or workshop website
+title: Home
+description: Information Systems and Databases Laboratory
+navorder: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet luctus venenatis lectus magna fringilla urna. Ut etiam sit amet nisl purus in mollis.
+The ISD-Lab of our department supports both educational and research needs of the Department of Informatics, as well as other departments of the Ionian University, related to information systems and databases.
 
-Purus semper eget duis at tellus. Ornare arcu odio ut sem nulla pharetra diam sit. Neque vitae tempus quam pellentesque. Viverra suspendisse potenti nullam ac tortor. Quis commodo odio aenean sed adipiscing. A erat nam at lectus urna duis convallis convallis tellus. Risus sed vulputate odio ut enim. Magna fringilla urna porttitor rhoncus dolor purus non. Nibh venenatis cras sed felis eget velit aliquet sagittis. Etiam tempor orci eu lobortis elementum nibh tellus.
+The main focus of the Information Systems research actions is on:
+- Management Information Systems (MIS)
+- Strategic Decision Making
+- Business Intelligence
+- Decision Support Systems
+- Expert Systems
+- Executive Information Systems
 
-Vestibulum lectus mauris ultrices eros in cursus.
+The Information Systems and Databases Laboratory (ISDLab) has been staffed by professors of the IT Department and other technical and scientific staff.
 
-- Id nibh tortor id aliquet lectus proin nibh nisl.
-- Non diam phasellus vestibulum lorem sed risus ultricies.
+The main focus of the Databases research actions is on
+- Data Structures in RAM and I/O model
+- Distributed Data Structures
+- P2P networks (indexing, caching, routing scheduling)
+- Spatio-Temporal and Multimedia Databases
+- Spatial Databases and GIS
+- Distributed and P2P Databases
+- Data Mining
+- Data Warehouses
+- Web Data Management
+- Web Information Retrieval
+- Cloud Data Management and Big Data Analytics
+- Music Databases
+- Steaming Data
 
-Tristique senectus et netus et malesuada fames ac turpis egestas. Adipiscing elit duis tristique sollicitudin nibh sit amet.
+
+Ionian University is an Academic Partner of Visual Paradigm, and is granted the use of Visual Paradigm’s UML modeler and BPMN modeler for educational use.

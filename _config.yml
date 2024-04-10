@@ -5,6 +5,11 @@ url: https://piazzai.github.io/jekyll-nagymaros
 
 theme: jekyll-nagymaros
 
+collections:
+  authors:
+    output: true
+
+
 copyright: ISD LAB
 indexing: true
 

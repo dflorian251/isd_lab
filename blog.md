@@ -1,4 +1,7 @@
 ---
+title: Blog
+description: List of organizers and participants
+navorder: 5
 ---
 <h1>Latest Posts</h1>
 
