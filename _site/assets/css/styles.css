@@ -2185,7 +2185,9 @@ body {
 }
 
 .staff-list {
+  margin-top: 3rem;
   list-style: none;
+  text-align: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2193,16 +2195,12 @@ body {
 
 .staff-list li {
   margin-bottom: 1.5rem;
-  width: 300px;
-  height: 300px;
+  width: 30%;
+  height: 30%;
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.staff-list li:only-child {
-  align-self: flex-start;
 }
 
 .staff-list li .staff-avatar-container {
@@ -2235,3 +2233,20 @@ body {
 .staff-list li .staff-name-container .staff-name a:hover {
   text-decoration: underline;
 }
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px) {
+  .staff-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */

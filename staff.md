@@ -2,7 +2,7 @@
 layout: staff
 title: Staff
 description: ""
-navorder: 6
+navorder: 1
 ---
 <h2>Faculty Members</h2>
 <ul class = "staff-list" id = "faculty-staff">
@@ -14,8 +14,11 @@ navorder: 6
       </div>
       <div class = "staff-name-container">
         <h3 class = "staff-name">
+          {% assign splited_name = staff.name | split:' ' %}
           <a href = "#">
-            {{ staff.name }}
+            {% for name in splited_name%}
+              {{ name }}<br>
+            {% endfor %}
           </a>
         </h3>
       </div>
