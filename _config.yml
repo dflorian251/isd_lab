@@ -8,6 +8,23 @@ theme: jekyll-nagymaros
 collections:
   authors:
     output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
+plugins:
+  - jekyll-datapage-generator
+
+# Configuration for the jekyll-datapage_gen plugin
+page_gen-dirs: true
+page_gen:
+  - data: 'staff'
+    template: 'profile'
+    name: 'url'
+
 
 
 copyright: ISD LAB

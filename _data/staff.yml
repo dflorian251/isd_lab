@@ -6,6 +6,7 @@
   telephone:  2661087701
   website: https://users.ionio.gr/~pkour/PersonalWebsite/Home.html
   avatar: /assets/images/pkour.jpg
+  url: pkour
 
 - name: Adamantia Pateli
   rank: Professor
@@ -15,6 +16,7 @@
   telephone: 2661087714 
   website: https://scholar.google.gr/citations?user=z526I7UAAAAJ&hl=el&oi=ao
   avatar: /assets/images/pateli.jpg
+  url: pateli
 
 - name: Vasileios Karyotis
   rank: Associate Professor
@@ -24,6 +26,7 @@
   telephone:
   website: https://scholar.google.gr/citations?user=tZAZEFUAAAAJ&hl=en
   avatar: /assets/images/karyotis.jpg
+  url: karyotis
 
 - name: Dimitrios Ringas
   rank: Laboratory Teaching Personnel
@@ -33,6 +36,7 @@
   telephone:
   website:
   avatar: /assets/images/riggas.jpg
+  url: riggas
 
 - name : John Brown
   rank:
@@ -42,3 +46,4 @@
   telephone:
   website:
   avatar: /assets/images/random_researcher.jpg
+  url: brown

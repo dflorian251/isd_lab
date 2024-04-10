@@ -15,7 +15,7 @@ navorder: 1
       <div class = "staff-name-container">
         <h3 class = "staff-name">
           {% assign splited_name = staff.name | split:' ' %}
-          <a href = "#">
+          <a href = "{{ staff.url }}">
             {% for name in splited_name%}
               {{ name }}<br>
             {% endfor %}
