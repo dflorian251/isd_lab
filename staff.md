@@ -4,9 +4,10 @@ title: Staff
 description: ""
 navorder: 6
 ---
-
+<h2>Faculty Members</h2>
 <ul>
-  {% for staff in site.authors %}
+  {% assign filtred_staff = site.data.staff | where: "member", "faculty" %}
+  {% for staff in filtred_staff    %}
     <li>
       <img src="{{ staff.avatar }}" alt="{{ staff.name }}">
       <h3>{{ staff.name }}</h3>
@@ -15,3 +16,5 @@ navorder: 6
     </li>
   {% endfor %}
 </ul>
+
+<h2>Researchers</h2>

@@ -1,0 +1,26 @@
+- name: Panagiotis Kourouthanassis
+  rank: Head of ISDLab, Professor
+  member: faculty
+  bio: 
+  email: pkour@ionio.gr
+  telephone:  2661087701
+  website: https://users.ionio.gr/~pkour/PersonalWebsite/Home.html
+  avatar: /assets/images/pkour.jpg
+
+- name: Adamantia Pateli
+  rank: Professor
+  member: faculty
+  bio: 
+  email: pateli@ionio.gr
+  telephone: 2661087714 
+  website: https://scholar.google.gr/citations?user=z526I7UAAAAJ&hl=el&oi=ao
+  avatar: /assets/images/pateli.jpg
+
+- name: Vasileios Karyotis
+  rank: Associate Professor
+  member: faculty
+  bio: 
+  email: karyotis@ionio.gr
+  telephone:
+  website: https://scholar.google.gr/citations?user=tZAZEFUAAAAJ&hl=en
+  avatar: /assets/images/karyotis.jpg
