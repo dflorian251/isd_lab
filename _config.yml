@@ -1,11 +1,11 @@
-title: Nagymaros
-description: Jekyll theme for a conference website
+title: ISD Lab
+description: Information Systems and Databases Laboratory
 baseurl: ""
 url: https://piazzai.github.io/jekyll-nagymaros
 
 theme: jekyll-nagymaros
 
-copyright: Place Holder
+copyright: ISD LAB
 indexing: true
 
 permalink: pretty

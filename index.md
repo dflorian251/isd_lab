@@ -1,5 +1,6 @@
 ---
 layout: index
+title: ISD Lab
 description: A simple Jekyll theme for a conference or workshop website
 ---
 
