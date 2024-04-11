@@ -15,6 +15,7 @@ defaults:
       type: authors
     values:
       layout: author
+
 plugins:
   - jekyll-datapage-generator
 
