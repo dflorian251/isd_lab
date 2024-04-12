@@ -16,6 +16,7 @@
   url: pkour
   author_id: 8-yTwCkAAAAJ
 
+
 - name: Adamantia Pateli
   rank: Professor
   member: faculty
@@ -36,6 +37,7 @@
   url: pateli
   author_id: z526I7UAAAAJ
 
+
 - name: Vasileios Karyotis
   rank: Associate Professor
   member: faculty
@@ -49,7 +51,7 @@
   avatar: /assets/images/karyotis.jpg
   url: karyotis
   author_id: tZAZEFUAAAAJ
-  nickname: karyotis
+
 
 - name: Dimitrios Ringas
   rank: Laboratory Teaching Personnel
@@ -64,6 +66,7 @@
   avatar: /assets/images/riggas.jpg
   url: riggas
   author_id: HTcDtXsAAAAJ&
+
 
 - name : John Brown
   rank:

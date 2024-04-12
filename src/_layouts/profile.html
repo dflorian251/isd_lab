@@ -40,10 +40,12 @@ layout: default
       <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
             <div class="staff-profile-bio">
                   <h2 class="display-6">Publications</h2>
-                  {% assign file_name = page.nickname %}
-                  {% for publication in site.data.publications.[{{file_name}}] %}
+                  {% assign file_name = page.author_id %}
+                  {{ file_name }}
+                  {% for publication in site.data.publications.8-yTwCkAAAAJ %}
                   <li>{{ publication.title }}</li>
                   {% endfor %}
+                  
             </div>
       </div>
 </main>

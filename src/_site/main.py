@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import yaml
 
-def get_authors_ids():
+def get_members_ids():
 	with open('_data/staff.yml', 	'r') as f:
 		staff_data = yaml.full_load(f)
 	authors_ids = []
@@ -14,15 +14,15 @@ def get_authors_ids():
 	return authors_ids
 
 
-def get_author_url(author_id):
-	with open('_data/staff.yml', 'r') as f:
-		staff_data = yaml.full_load(f)
-	for i in range (0, len(staff_data)):
-		if ( staff_data[i]["author_id"] == author_id):
-			return staff_data[i]["url"]
+# def get_author_url(author_id):
+# 	with open('_data/staff.yml', 'r') as f:
+# 		staff_data = yaml.full_load(f)
+# 	for i in range (0, len(staff_data)):
+# 		if ( staff_data[i]["author_id"] == author_id):
+# 			return staff_data[i]["url"]
 		
 
-def search_publications(author_id, api_key):
+def get_member_scholar(author_id, api_key):
 	params = {
 	  "api_key": api_key,
 	  "engine": "google_scholar_author",
@@ -34,22 +34,27 @@ def search_publications(author_id, api_key):
 	return results
 
 
-def output_file(author_url, articles):
-	x = articles["articles"]
-	y = json.dumps(x, indent=4)
-	with open(f"./_data/publications/{author_url}.json", "w") as outfile:
+def output_file(y):
+	with open(f"./_data/publications.json", "w+") as outfile:
 	    outfile.write(y)
+ 
 	    
 	    
 if __name__ == "__main__":
 
 	load_dotenv()
 	api_key = os.getenv("SARPAPI_API_KEY")
-	authors_list = get_authors_ids()
-	for author_id in authors_list:
-		author_url = get_author_url(author_id)
-		articles = search_publications(author_id, api_key)
-		output_file(author_url, articles)	
+	members_list = get_members_ids()
+	print(members_list)
+	for author_id in members_list:
+		if (author_id == None):
+			continue
+		member_data = get_member_scholar(author_id, api_key)
+		author_info = json.dumps(member_data["author"], indent=4)
+		author_articles = json.dumps(member_data["articles"], indent=4)
+		author_data = author_info + author_articles
+		output_file(author_data)	
+		#print(author_data)
 	
 
     
