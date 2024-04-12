@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+{% include metadata.liquid %}
+{% include header.html %}
+{% assign index_bg = site.data.skin.index.bg  | default: 'gray-2' %}
+
+<main class="my-4">
+      <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
+            <div class="staff-profile">
+                  <h3 class="display-4">{{ page.title }}</h3>
+                  <div class="staff-profile-info">
+                        <div class="staff-avatar-container">
+                              <img src="{{ page.avatar }}">
+                        </div>
+                        <div class="staff-profile-info-details">
+                              Rank: {{ page.rank }}<br>
+                              Email: {{ page.email }}<br>
+                              Telephone: {{ page.telephone }}<br>
+                              Website: {{ page.website }}<br>
+                        </div>
+
+                  </div>
+
+            </div>
+      </div>
+</main>
+
+<main class="my-4">
+      <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
+            <div class="staff-profile-bio">
+                  <h2 class="display-6">Biographical Information</h2>
+                  {{ page.bio | newline_to_br}}
+            </div>
+      </div>
+</main>
+
+<main class="my-4">
+      <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
+            <div class="staff-profile-bio">
+                  <h2 class="display-6">Publications</h2>
+                  {% assign file_name = page.nickname %}
+                  {% for publication in site.data.publications.[{{file_name}}] %}
+                  <li>{{ publication.title }}</li>
+                  {% endfor %}
+            </div>
+      </div>
+</main>
+      
+  
+{% include footer.html %}
+

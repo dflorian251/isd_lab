@@ -2183,3 +2183,90 @@ body {
 .leaflet-default-icon-path {
   background-image: url(../images/marker-icon.png);
 }
+
+.staff-list {
+  margin-top: 3rem;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.staff-list li {
+  margin-bottom: 1.5rem;
+  width: 30%;
+  height: 30%;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.staff-list li .staff-avatar-container {
+  width: 200px;
+  height: 200px;
+  background-color: #f8f9fa;
+}
+
+.staff-list li .staff-avatar-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.staff-list li .staff-name-container {
+  margin-top: 0.5rem;
+  min-height: 67.2px;
+  display: flex;
+  align-items: center;
+}
+
+.staff-list li .staff-name-container .staff-name {
+  text-align: center;
+}
+
+.staff-list li .staff-name-container .staff-name a {
+  color: #343a40;
+}
+
+.staff-list li .staff-name-container .staff-name a:hover {
+  text-decoration: underline;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px) {
+  .staff-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+/* STAFF PROFILE STYLING */
+.staff-profile .staff-profile-info {
+  display: flex;
+}
+
+.staff-profile .staff-profile-info .staff-profile-info-details {
+  margin-left: 5rem;
+}
+
+.staff-profile .staff-profile-info .staff-avatar-container {
+  width: 300px;
+  height: 300px;
+  background-color: #f8f9fa;
+}
+
+.staff-profile .staff-profile-info .staff-avatar-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
