@@ -14,6 +14,15 @@ def get_members_ids():
 	return authors_ids
 
 
+def get_members_names():
+	with open('_data/staff.yml', 	'r') as f:
+		staff_data = yaml.full_load(f)
+	authors_names = []
+	for i in range (0, len(staff_data)):
+		authors_names.append(staff_data[i]["name"])
+	return authors_names
+
+
 # def get_author_url(author_id):
 # 	with open('_data/staff.yml', 'r') as f:
 # 		staff_data = yaml.full_load(f)
@@ -35,8 +44,9 @@ def get_member_scholar(author_id, api_key):
 
 
 def output_file(y):
-	with open(f"./_data/publications.json", "w+") as outfile:
-	    outfile.write(y)
+	with open(f"./_data/test.json", "a") as outfile:
+		outfile.write(y)
+		outfile.close()
  
 	    
 	    
@@ -45,17 +55,20 @@ if __name__ == "__main__":
 	load_dotenv()
 	api_key = os.getenv("SARPAPI_API_KEY")
 	members_list = get_members_ids()
-	print(members_list)
 	for author_id in members_list:
+		print(author_id)
 		if (author_id == None):
 			continue
 		member_data = get_member_scholar(author_id, api_key)
-		author_info = json.dumps(member_data["author"], indent=4)
-		author_articles = json.dumps(member_data["articles"], indent=4)
-		author_data = author_info + author_articles
-		output_file(author_data)	
-		#print(author_data)
-	
+		author = [
+				{"author_id": author_id}
+		]
+		final = [author, member_data["articles"]]
+		
+		final = json.dumps(final, indent=4)
+		final = f"{final},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
+		final = final.replace("N/N", '\n')
+		output_file(final)
 
     
 
