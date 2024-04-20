@@ -89,3 +89,24 @@ XX-Large devices (larger desktops, 1400px and up)
       height: 300px;
       object-fit: contain;
 }
+
+
+
+// AUTHOR'S PUBLICATIONS LIST
+// for page _layouts/profile.html
+.publications-container > tbody > .publication > td {
+   padding: 3px 10px;
+}
+
+.publications-container > thead {
+      text-align: center;
+}
+
+.publications-container > thead > th {
+      text-align: center;
+      padding: 3px 18px 3px 10px;
+}
+
+.odd {
+      background-color: #ffffff;;
+}
