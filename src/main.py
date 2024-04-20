@@ -44,7 +44,7 @@ def get_member_scholar(author_id, api_key):
 
 
 def output_file(y):
-	with open(f"./_data/test.json", "a") as outfile:
+	with open(f"./_data/read.json", "a") as outfile:
 		outfile.write(y)
 		outfile.close()
  
@@ -56,7 +56,6 @@ if __name__ == "__main__":
 	api_key = os.getenv("SARPAPI_API_KEY")
 	members_list = get_members_ids()
 	for author_id in members_list:
-		print(author_id)
 		if (author_id == None):
 			continue
 		member_data = get_member_scholar(author_id, api_key)
@@ -64,11 +63,24 @@ if __name__ == "__main__":
 				{"author_id": author_id}
 		]
 		final = [author, member_data["articles"]]
-		
 		final = json.dumps(final, indent=4)
 		final = f"{final},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
 		final = final.replace("N/N", '\n')
 		output_file(final)
 
+	with open(f"./_data/read.json", "r") as file:
+		contents = file.read()
+		file.close()
+	
+	contents = f"[{contents}]"
+	contents = contents[:len(contents)-3] + contents[len(contents)-3+1:] 
+	print(contents)
+	print(json.dumps(json.loads(contents), indent=3))
+	json_contents = json.dumps(json.loads(contents), indent=4)
+	with open(f"./_data/test.json", "a") as outfile:
+		outfile.write(json_contents)
+		outfile.close()
+	
+	
     
 
