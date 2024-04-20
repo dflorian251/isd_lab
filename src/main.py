@@ -43,10 +43,6 @@ def get_member_scholar(author_id, api_key):
 	return results
 
 
-def output_file(y):
-	with open(f"./_data/read.json", "a+") as outfile:
-		outfile.write(y)
-		outfile.close()
  
 	    
 	    
@@ -62,26 +58,25 @@ if __name__ == "__main__":
 		author = [
 				{"author_id": author_id}
 		]
-		final = [author, member_data["articles"]]
-		final = json.dumps(final, indent=4)
-		final = f"{final},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
-		final = final.replace("N/N", '\n')
-		output_file(final)
+		data = [author, member_data["articles"]]
+		data = json.dumps(data, indent=4)
+		data = f"{data},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
+		data = data.replace("N/N", '\n')
+		with open(f"./_data/publication.json", "a+") as file:
+			file.write(data)
+			file.close(data)
 
-	with open(f"./_data/read.json", "a+") as file:
+	with open(f"./_data/publication.json", "a+") as file:
 		file.seek(0) # Because in a+ mode the cursor is by default at the end of the file
 		contents = file.read()
 		file.close()
 	
 	contents = f"[{contents}]"
-	contents = contents[:len(contents)-3] + contents[len(contents)-3+1:] 
-	print(contents)
-	print(json.dumps(json.loads(contents), indent=3))
+	contents = contents[:len(contents)-3] + contents[len(contents)-3+1:] # Remove the last comma for syntax reasons
 	json_contents = json.dumps(json.loads(contents), indent=4)
-	with open(f"./_data/read.json", "w+") as outfile:
-		outfile.write(json_contents)
-		outfile.close()
+	# Use of w+ mode because we don't want the previous file's content
+	with open(f"./_data/publication.json", "w+") as file:
+		file.write(json_contents)
+		file.close()
 	
 	
-    
-
