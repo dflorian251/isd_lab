@@ -44,7 +44,7 @@ def get_member_scholar(author_id, api_key):
 
 
 def output_file(y):
-	with open(f"./_data/read.json", "a") as outfile:
+	with open(f"./_data/read.json", "a+") as outfile:
 		outfile.write(y)
 		outfile.close()
  
@@ -68,7 +68,8 @@ if __name__ == "__main__":
 		final = final.replace("N/N", '\n')
 		output_file(final)
 
-	with open(f"./_data/read.json", "r") as file:
+	with open(f"./_data/read.json", "a+") as file:
+		file.seek(0) # Because in a+ mode the cursor is by default at the end of the file
 		contents = file.read()
 		file.close()
 	
@@ -77,7 +78,7 @@ if __name__ == "__main__":
 	print(contents)
 	print(json.dumps(json.loads(contents), indent=3))
 	json_contents = json.dumps(json.loads(contents), indent=4)
-	with open(f"./_data/test.json", "a") as outfile:
+	with open(f"./_data/read.json", "w+") as outfile:
 		outfile.write(json_contents)
 		outfile.close()
 	
