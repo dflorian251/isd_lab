@@ -23,6 +23,13 @@ def get_members_names():
 	return authors_names
 
 
+def get_member_name(search_id):
+	with open('_data/staff.yml', 	'r') as f:
+		staff_data = yaml.full_load(f)
+	for i in range (0, len(staff_data)):
+		if staff_data[i]["author_id"] == search_id:
+			return staff_data[i]["name"]
+
 # def get_author_url(author_id):
 # 	with open('_data/staff.yml', 'r') as f:
 # 		staff_data = yaml.full_load(f)
@@ -55,18 +62,19 @@ if __name__ == "__main__":
 		if (author_id == None):
 			continue
 		member_data = get_member_scholar(author_id, api_key)
+		author_name = get_member_name(author_id)
 		author = [
-				{"author_id": author_id}
+				{"author_name": author_name}
 		]
 		data = [author, member_data["articles"]]
 		data = json.dumps(data, indent=4)
 		data = f"{data},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
 		data = data.replace("N/N", '\n')
-		with open(f"./_data/publication.json", "a+") as file:
+		with open(f"./_data/publications.json", "a+") as file:
 			file.write(data)
-			file.close(data)
+			file.close()
 
-	with open(f"./_data/publication.json", "a+") as file:
+	with open(f"./_data/publications.json", "a+") as file:
 		file.seek(0) # Because in a+ mode the cursor is by default at the end of the file
 		contents = file.read()
 		file.close()
@@ -75,7 +83,7 @@ if __name__ == "__main__":
 	contents = contents[:len(contents)-3] + contents[len(contents)-3+1:] # Remove the last comma for syntax reasons
 	json_contents = json.dumps(json.loads(contents), indent=4)
 	# Use of w+ mode because we don't want the previous file's content
-	with open(f"./_data/publication.json", "w+") as file:
+	with open(f"./_data/publications.json", "w+") as file:
 		file.write(json_contents)
 		file.close()
 	

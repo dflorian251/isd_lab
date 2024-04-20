@@ -291,6 +291,295 @@
     [
         [
             {
+                "author_name": "Panagiotis Kourouthanassis"
+            }
+        ],
+        [
+            {
+                "title": "Explaining online shopping behavior with fsQCA: The role of cognitive and affective perceptions",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:YFjsv_pBGBYC",
+                "citation_id": "8-yTwCkAAAAJ:YFjsv_pBGBYC",
+                "authors": "IO Pappas, PE Kourouthanassis, MN Giannakos, V Chrissikopoulos",
+                "publication": "Journal of Business Research 69 (2), 794-803, 2016",
+                "cited_by": {
+                    "value": 444,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7171086464714830510",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=7171086464714830510&engine=google_scholar&hl=en",
+                    "cites_id": "7171086464714830510"
+                },
+                "year": "2016"
+            },
+            {
+                "title": "Tourists responses to mobile augmented reality travel guides: The role of emotions on adoption behavior",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:JV2RwH3_ST0C",
+                "citation_id": "8-yTwCkAAAAJ:JV2RwH3_ST0C",
+                "authors": "P Kourouthanassis, C Boletsis, C Bardaki, D Chasanidou",
+                "publication": "Pervasive and Mobile Computing 18, 71-87, 2015",
+                "cited_by": {
+                    "value": 352,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13681698530790497937",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=13681698530790497937&engine=google_scholar&hl=en",
+                    "cites_id": "13681698530790497937"
+                },
+                "year": "2015"
+            },
+            {
+                "title": "The interplay of online shopping motivations and experiential factors on personalized e-commerce: A complexity theory approach",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:ns9cj8rnVeAC",
+                "citation_id": "8-yTwCkAAAAJ:ns9cj8rnVeAC",
+                "authors": "IO Pappas, PE Kourouthanassis, MN Giannakos, G Lekakos",
+                "publication": "Telematics and informatics 34 (5), 730-742, 2017",
+                "cited_by": {
+                    "value": 259,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=11060993250758831777",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=11060993250758831777&engine=google_scholar&hl=en",
+                    "cites_id": "11060993250758831777"
+                },
+                "year": "2017"
+            },
+            {
+                "title": "Introduction to the special issue mobile commerce: the past, present, and future of mobile commerce research",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:M3ejUd6NZC8C",
+                "citation_id": "8-yTwCkAAAAJ:M3ejUd6NZC8C",
+                "authors": "PE Kourouthanassis, GM Giaglis",
+                "publication": "International journal of electronic commerce 16 (4), 5-18, 2012",
+                "cited_by": {
+                    "value": 221,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14856090727892532089",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=14856090727892532089&engine=google_scholar&hl=en",
+                    "cites_id": "14856090727892532089"
+                },
+                "year": "2012"
+            },
+            {
+                "title": "Shiny happy people buying: the role of emotions on personalized e-shopping",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:iH-uZ7U-co4C",
+                "citation_id": "8-yTwCkAAAAJ:iH-uZ7U-co4C",
+                "authors": "IO Pappas, PE Kourouthanassis, MN Giannakos, V Chrissikopoulos",
+                "publication": "Electronic Markets 24, 193-206, 2014",
+                "cited_by": {
+                    "value": 194,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5408881434171570173",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=5408881434171570173&engine=google_scholar&hl=en",
+                    "cites_id": "5408881434171570173"
+                },
+                "year": "2014"
+            },
+            {
+                "title": "Measuring service quality from unstructured data: A topic modeling application on airline passengers\u2019 online reviews",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:dfsIfKJdRG4C",
+                "citation_id": "8-yTwCkAAAAJ:dfsIfKJdRG4C",
+                "authors": "N Korfiatis, P Stamolampros, P Kourouthanassis, V Sagiadinos",
+                "publication": "Expert Systems with Applications 116, 472-486, 2019",
+                "cited_by": {
+                    "value": 185,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1329815795182193409",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=1329815795182193409&engine=google_scholar&hl=en",
+                    "cites_id": "1329815795182193409"
+                },
+                "year": "2019"
+            },
+            {
+                "title": "Towards a classification framework for mobile location based services",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:u5HHmVD_uO8C",
+                "citation_id": "8-yTwCkAAAAJ:u5HHmVD_uO8C",
+                "authors": "GM Giaglis, P Kourouthanassis, A Tsamakos",
+                "publication": "Mobile commerce: technology, theory and applications, 67-85, 2003",
+                "cited_by": {
+                    "value": 183,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16178600193187235608",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=16178600193187235608&engine=google_scholar&hl=en",
+                    "cites_id": "16178600193187235608"
+                },
+                "year": "2003"
+            },
+            {
+                "title": "Demystifying the design of mobile augmented reality applications",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:RHpTSmoSYBkC",
+                "citation_id": "8-yTwCkAAAAJ:RHpTSmoSYBkC",
+                "authors": "PE Kourouthanassis, C Boletsis, G Lekakos",
+                "publication": "Multimedia Tools and Applications 74, 1045-1066, 2015",
+                "cited_by": {
+                    "value": 180,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14959344098820510464",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=14959344098820510464&engine=google_scholar&hl=en",
+                    "cites_id": "14959344098820510464"
+                },
+                "year": "2015"
+            },
+            {
+                "title": "Developing consumer-friendly pervasive retail systems",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:u-x6o8ySG0sC",
+                "citation_id": "8-yTwCkAAAAJ:u-x6o8ySG0sC",
+                "authors": "P Kourouthanassis, G Roussos",
+                "publication": "IEEE Pervasive Computing 2 (02), 32-39, 2003",
+                "cited_by": {
+                    "value": 178,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=17119306803698311869",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=17119306803698311869&engine=google_scholar&hl=en",
+                    "cites_id": "17119306803698311869"
+                },
+                "year": "2003"
+            },
+            {
+                "title": "Sense and sensibility in personalized e\u2010commerce: How emotions rebalance the purchase intentions of persuaded customers",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:2P1L_qKh6hAC",
+                "citation_id": "8-yTwCkAAAAJ:2P1L_qKh6hAC",
+                "authors": "IO Pappas, PE Kourouthanassis, MN Giannakos, V Chrissikopoulos",
+                "publication": "Psychology & Marketing 34 (10), 972-986, 2017",
+                "cited_by": {
+                    "value": 120,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6785465564604473672",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=6785465564604473672&engine=google_scholar&hl=en",
+                    "cites_id": "6785465564604473672"
+                },
+                "year": "2017"
+            },
+            {
+                "title": "Enhancing user experience through pervasive information systems: The case of pervasive retailing",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:IjCSPb-OGe4C",
+                "citation_id": "8-yTwCkAAAAJ:IjCSPb-OGe4C",
+                "authors": "PE Kourouthanassis, GM Giaglis, AP Vrechopoulos",
+                "publication": "International Journal of Information Management 27 (5), 319-335, 2007",
+                "cited_by": {
+                    "value": 120,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=13554058088409163089",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=13554058088409163089&engine=google_scholar&hl=en",
+                    "cites_id": "13554058088409163089"
+                },
+                "year": "2007"
+            },
+            {
+                "title": "On the potential use of mobile positioning technologies in indoor environments",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:d1gkVwhDpl0C",
+                "citation_id": "8-yTwCkAAAAJ:d1gkVwhDpl0C",
+                "authors": "K Fouskas, G Giaglis, P Kourouthanassis, A Pateli, A Tsamakos",
+                "publication": "BLED 2002 Proceedings, 33, 2002",
+                "cited_by": {
+                    "value": 108,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=18220378030737559603",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=18220378030737559603&engine=google_scholar&hl=en",
+                    "cites_id": "18220378030737559603"
+                },
+                "year": "2002"
+            },
+            {
+                "title": "Flying to quality: Cultural influences on online reviews",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:HoB7MX3m0LUC",
+                "citation_id": "8-yTwCkAAAAJ:HoB7MX3m0LUC",
+                "authors": "P Stamolampros, N Korfiatis, P Kourouthanassis, E Symitsi",
+                "publication": "Journal of Travel Research 58 (3), 496-511, 2019",
+                "cited_by": {
+                    "value": 99,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14123894498561858757",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=14123894498561858757&engine=google_scholar&hl=en",
+                    "cites_id": "14123894498561858757"
+                },
+                "year": "2019"
+            },
+            {
+                "title": "A case study in pervasive retail",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:mVmsd5A6BfQC",
+                "citation_id": "8-yTwCkAAAAJ:mVmsd5A6BfQC",
+                "authors": "G Roussos, J Tuominen, L Koukara, O Seppala, P Kourouthanasis, ...",
+                "publication": "Proceedings of the 2nd international workshop on Mobile commerce, 90-94, 2002",
+                "cited_by": {
+                    "value": 84,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4312000490664812436",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=4312000490664812436&engine=google_scholar&hl=en",
+                    "cites_id": "4312000490664812436"
+                },
+                "year": "2002"
+            },
+            {
+                "title": "Deploying RFID-enabled services in the retail supply chain: Lessons learned toward the internet of things",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:_kc_bZDykSQC",
+                "citation_id": "8-yTwCkAAAAJ:_kc_bZDykSQC",
+                "authors": "C Bardaki, P Kourouthanassis, K Pramatari",
+                "publication": "Information Systems Management 29 (3), 233-245, 2012",
+                "cited_by": {
+                    "value": 78,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9495993855916016153",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=9495993855916016153&engine=google_scholar&hl=en",
+                    "cites_id": "9495993855916016153"
+                },
+                "year": "2012"
+            },
+            {
+                "title": "Intelligent cokes and diapers: MyGrocer ubiquitous computing environment",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:9yKSN-GCB0IC",
+                "citation_id": "8-yTwCkAAAAJ:9yKSN-GCB0IC",
+                "authors": "P Kourouthanassis, D Spinellis, G Roussos, GM Giaglis",
+                "publication": "First International Mobile Business Conference, 150-172, 2002",
+                "cited_by": {
+                    "value": 73,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15192329611217239251",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=15192329611217239251&engine=google_scholar&hl=en",
+                    "cites_id": "15192329611217239251"
+                },
+                "year": "2002"
+            },
+            {
+                "title": "Explaining travellers online information satisfaction: A complexity theory approach on information needs, barriers, sources and personal characteristics",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:lSLTfruPkqcC",
+                "citation_id": "8-yTwCkAAAAJ:lSLTfruPkqcC",
+                "authors": "PE Kourouthanassis, P Mikalef, IO Pappas, P Kostagiolas",
+                "publication": "Information & Management 54 (6), 814-824, 2017",
+                "cited_by": {
+                    "value": 70,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4666644498768092908",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=4666644498768092908&engine=google_scholar&hl=en",
+                    "cites_id": "4666644498768092908"
+                },
+                "year": "2017"
+            },
+            {
+                "title": "A roadmap for research in mobile business",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:2osOgNQ5qMEC",
+                "citation_id": "8-yTwCkAAAAJ:2osOgNQ5qMEC",
+                "authors": "KG Fouskas, GM Giaglis, PE Kourouthanassis, S Karnouskos, A Pitsillides, ...",
+                "publication": "International Journal of Mobile Communications 3 (4), 350-373, 2005",
+                "cited_by": {
+                    "value": 61,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4330515681622765365",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=4330515681622765365&engine=google_scholar&hl=en",
+                    "cites_id": "4330515681622765365"
+                },
+                "year": "2005"
+            },
+            {
+                "title": "Explaining user experience in mobile gaming applications: an fsQCA approach",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:cFHS6HbyZ2cC",
+                "citation_id": "8-yTwCkAAAAJ:cFHS6HbyZ2cC",
+                "authors": "IO Pappas, P Mikalef, MN Giannakos, PE Kourouthanassis",
+                "publication": "Internet Research 29 (2), 293-314, 2019",
+                "cited_by": {
+                    "value": 60,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4817120204925844859",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=4817120204925844859&engine=google_scholar&hl=en",
+                    "cites_id": "4817120204925844859"
+                },
+                "year": "2019"
+            },
+            {
+                "title": "Should I stay or should I go? The moderating effect of self-image congruity and trust on social networking continued use",
+                "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=8-yTwCkAAAAJ&citation_for_view=8-yTwCkAAAAJ:M3NEmzRMIkIC",
+                "citation_id": "8-yTwCkAAAAJ:M3NEmzRMIkIC",
+                "authors": "P Kourouthanassis, G Lekakos, V Gerakis",
+                "publication": "Behaviour & Information Technology 34 (2), 190-203, 2015",
+                "cited_by": {
+                    "value": 51,
+                    "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=15722148187600418068",
+                    "serpapi_link": "https://serpapi.com/search.json?cites=15722148187600418068&engine=google_scholar&hl=en",
+                    "cites_id": "15722148187600418068"
+                },
+                "year": "2015"
+            }
+        ]
+    ],
+    [
+        [
+            {
                 "author_name": "Adamantia Pateli"
             }
         ],
