@@ -41,10 +41,15 @@ layout: default
             <div class="staff-profile-bio">
                   <h2 class="display-6">Publications</h2>
                   {% for author in site.data.publications %}
-                  {% if site.title == site.data.publications[0][0]["author_name"] %}
-                  {% for publication in site.data.publications %}
-                  <li>{{  publication[1][0]["title"] }}</li>
+                        {% assign author_details = author[0][0] %}
+                        {% if author_details.author_name == page.title %}
+                              {% assign articles = author[1] %}
+                              {% for article in articles %}
+                                    <li>{{ article.title }}</li>
+                              {% endfor %}
+                        {% endif %}
                   {% endfor %}
+                
             </div>
       </div>
 </main>
