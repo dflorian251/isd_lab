@@ -35,13 +35,29 @@ function publsPerYear(total_publs) {
 }
 
 
+function findMax(yearlyPubls) {
+    let max = 0;
+    Object.values(yearlyPubls).forEach(publsOfYear=> {
+        if (publsOfYear >= max) {
+            let temp = publsOfYear;
+            publsOfYear = max;
+            max = temp;
+        }
+    });
+    return max;
+}
+
+
+
 let authors_data ; // We are gonna work for now with only one author
 readAndProcessFile()
     .then(data => {
         console.log("Reading successful");
         authors_data = data[0][1]; // Publications 
-        console.log(publsSum(publsPerYear(authors_data)));
-        
+        stats = publsPerYear(authors_data);
+        maxNumPubls = findMax(stats);
+        const BAR_HEIGHT = 60; // in px
+        heightPerEachPud = BAR_HEIGHT / maxNumPubls;
     })
     .catch(err => {
         console.error(err);
