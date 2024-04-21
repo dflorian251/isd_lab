@@ -43,7 +43,7 @@ def get_member_scholar(author_id, api_key):
 	  "api_key": api_key,
 	  "engine": "google_scholar_author",
 	  "hl": "en",
-	  "author_id": author_id
+	  "author_id": author_id,
 	}
 	search = GoogleSearch(params)
 	results = search.get_dict()
