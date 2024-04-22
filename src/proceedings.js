@@ -58,6 +58,14 @@ readAndProcessFile()
         maxNumPubls = findMax(stats);
         const BAR_HEIGHT = 60; // in px
         heightPerEachPud = BAR_HEIGHT / maxNumPubls;
+
+
+        // DISPLAYING THE PUDS
+        let chart = document.getElementById("chart");
+        var pud = document.createElement("div");
+        pud.style.backgroundColor = 'blue';
+        pud.style.height = heightPerEachPud;
+        chart.appendChild(pud);
     })
     .catch(err => {
         console.error(err);

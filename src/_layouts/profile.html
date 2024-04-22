@@ -40,6 +40,10 @@ layout: default
       <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
             <div class="staff-profile-bio">
                   <h2 class="display-6">Publications</h2>
+                  <div id="chart" style="height: 100px;">
+
+                  </div>
+                  
                   <table class="publications-container">
                         <thead>
                               <tr>
@@ -62,9 +66,12 @@ layout: default
                                                             {{ article.year}}
                                                       </td>
                                                       <td class="publication-type">
-                                                      {% if article.publication | downcase contains "journal" | downcase %}
+                                                      {% assign publication_type = article.publication | downcase %}
+                                                      {% assign type_journal = "journal" %}
+                                                      {% assign type_conference = "conference" %}
+                                                      {% if publication_type contains type_journal %}
                                                             Journal
-                                                      {% elsif article.publication | downcase contains "conference" | downcase %}
+                                                      {% elsif publication_type contains type_conference%}
                                                             Conference
                                                       {% else %}
                                                             Other
