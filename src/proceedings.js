@@ -1,11 +1,7 @@
-const fs = require("fs");
-const util = require("util");
-
-const readFilePromise = util.promisify(fs.readFile);
 
 async function readAndProcessFile() {
     try {
-        const data = await readFilePromise('_data/publications.json');
+        const data = await readFilePromise('./_data/publications.json');
         const fileContent = JSON.parse(data.toString());
         return fileContent; // Data available as if synchronous
     } catch (err) {
@@ -50,26 +46,45 @@ function findMax(yearlyPubls) {
 
 
 
-let authors_data ; // We are gonna work for now with only one author
-readAndProcessFile()
-    .then(data => {
-        console.log("Reading successful");
-        authors_data = data[0][1]; // Publications 
-        stats = publsPerYear(authors_data);
-        maxNumPubls = findMax(stats);
-        const BAR_HEIGHT = 60; // in px
-        heightPerEachPud = BAR_HEIGHT / maxNumPubls;
+// let authors_data ; // We are gonna work for now with only one author
+// await readAndProcessFile()
+//     .then(data => {
+//         console.log("Reading successful");
+//         authors_data = data[0][1]; // Publications 
+//         stats = publsPerYear(authors_data);
+//         maxNumPubls = findMax(stats);
+//         const BAR_HEIGHT = 60; // in px
+//         heightPerEachPud = BAR_HEIGHT / maxNumPubls;
 
 
-        // DISPLAYING THE PUDS
-        let chart = document.getElementById("chart");
-        var pud = document.createElement("div");
-        pud.style.backgroundColor = 'blue';
-        pud.style.height = heightPerEachPud;
-        chart.appendChild(pud);
-    })
-    .catch(err => {
-        console.error(err);
-    });
+//         // DISPLAYING THE PUDS
+//         let chart = document.getElementById("chart");
+//         var pud = document.createElement("div");
+//         pud.style.backgroundColor = 'blue';
+//         pud.style.height = heightPerEachPud;
+//         chart.appendChild(pud);
+//     })
+//     .catch(err => {
+//         console.error(err);
+//     });
+
+function fetchFileData() {
+    fetch('/../_data/publications.json')
+        .then(response => {
+            // Check if the request was successful
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log('File data:', data);
+        })
+        .catch(error => {
+            console.error('Error fetching file:', error);
+        });
+}
+
+fetchFileData();
 
 
