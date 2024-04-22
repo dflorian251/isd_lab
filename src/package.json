@@ -1,6 +1,13 @@
 {
+  "name": "isd-lab-website",
+  "version": "0.0.4",
+  "scripts": {
+    "build": "browserify proceedings.js -o dist/bundle.js",
+    "watch": "watchify proceedings.js -o dist/bundle.js -v"
+  },
   "dependencies": {
     "fs": "^0.0.1-security",
-    "util": "^0.12.5"
+    "util": "^0.12.5",
+    "watchify": "^4.0.0"
   }
 }
