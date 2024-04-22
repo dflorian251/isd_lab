@@ -1,15 +1,4 @@
 
-async function readAndProcessFile() {
-    try {
-        const data = await readFilePromise('./_data/publications.json');
-        const fileContent = JSON.parse(data.toString());
-        return fileContent; // Data available as if synchronous
-    } catch (err) {
-        return err;
-    }
-}
-
-
 function publsSum(yearlyPubls){
     let sum = 0;
     Object.values(yearlyPubls).forEach(year => {
@@ -45,6 +34,33 @@ function findMax(yearlyPubls) {
 }
 
 
+// Plots the axes of the graph (that is the years of publications)
+function plotAxes(stats){
+    let chart = document.getElementById("chart");
+    let axes = document.createElement("div");
+    let axesWidth = chart.getBoundingClientRect().width ; // get the parent's width
+    let divider = 1; // use to divide the bars between them, size is in px 
+    let barsNum = Object.keys(stats).length;
+    
+    let barWidth = (axesWidth - ((barsNum - 1) * divider))/(barsNum - 1); // calculate the width of each bar
+    console.log(barWidth);
+    axes.style.height  = "20px";
+    axes.style.backgroundColor = "grey";
+
+    axes.innerHTML = stats.length;
+    chart.appendChild(axes);
+}
+
+
+function plotPuds(pudHeight){
+    let chart = document.getElementById("chart");
+    var pud = document.createElement("div");
+    pud.style.backgroundColor = 'blue';
+    pud.style.height = pudHeight;
+    chart.appendChild(pud);
+}
+
+
 
 function fetchFileData() {
     fetch('../../assets/publications.json')
@@ -60,19 +76,16 @@ function fetchFileData() {
             console.log("Reading was successful!");
             authors_data = data[0][1]; // Publications 
             stats = publsPerYear(authors_data);
+            
+
             let maxNumPubls = findMax(stats);
-            console.log(maxNumPubls);
             const BAR_HEIGHT = 60; // in px
             let heightPerEachPud = BAR_HEIGHT / maxNumPubls;
-            console.log(heightPerEachPud);
-    
-    
-            // DISPLAYING THE PUDS
-            let chart = document.getElementById("chart");
-            var pud = document.createElement("div");
-            pud.style.backgroundColor = 'blue';
-            pud.style.height = heightPerEachPud;
-            chart.appendChild(pud);
+            heightPerEachPud = `${String(heightPerEachPud)}px`
+            
+            
+            plotPuds(heightPerEachPud);
+            plotAxes(stats);
         })
         .catch(error => {
             console.error('Error fetching file:', error);
