@@ -2,7 +2,7 @@
 
 async function readAndProcessFile() {
     try {
-        const data = await readFilePromise('_data/publications.json');
+        const data = await readFilePromise('./_data/publications.json');
         const fileContent = JSON.parse(data.toString());
         return fileContent; // Data available as if synchronous
     } catch (err) {
@@ -70,7 +70,7 @@ function findMax(yearlyPubls) {
 //     });
 
 function fetchFileData() {
-    fetch('./_data/publications.json')
+    fetch('../../assets/publications.json')
         .then(response => {
             // Check if the request was successful
             if (!response.ok) {

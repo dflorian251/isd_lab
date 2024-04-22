@@ -69,7 +69,7 @@ function findMax(yearlyPubls) {
 //     });
 
 function fetchFileData() {
-    fetch('assets/publications.json')
+    fetch('../../assets/publications.json')
         .then(response => {
             // Check if the request was successful
             if (!response.ok) {
