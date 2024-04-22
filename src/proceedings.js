@@ -57,7 +57,7 @@ function fetchFileData() {
         })
         .then(data => {
             let authors_data, stats; // We are gonna work with one author for now
-            console.log("Reading ");
+            console.log("Reading was successful!");
             authors_data = data[0][1]; // Publications 
             stats = publsPerYear(authors_data);
             let maxNumPubls = findMax(stats);
