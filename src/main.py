@@ -38,11 +38,11 @@ if __name__ == "__main__":
 		data = json.dumps(data, indent=4)
 		data = f"{data},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
 		data = data.replace("N/N", '\n')
-		with open(f"./_data/publications.json", "a+") as file:
+		with open(f"./assets/publications.json", "a+") as file:
 			file.write(data)
 			file.close()
 
-	with open(f"./_data/publications.json", "a+") as file:
+	with open(f"./assets/publications.json", "a+") as file:
 		file.seek(0) # Because in a+ mode the cursor is by default at the end of the file
 		contents = file.read()
 		file.close()
@@ -51,7 +51,7 @@ if __name__ == "__main__":
 	contents = contents[:len(contents)-3] + contents[len(contents)-3+1:] # Remove the last comma for syntax reasons
 	json_contents = json.dumps(json.loads(contents), indent=4)
 	# Use of w+ mode because we don't want the previous file's content
-	with open(f"./_data/publications.json", "w+") as file:
+	with open(f"./assets/publications.json", "w+") as file:
 		file.write(json_contents)
 		file.close()
 	

@@ -72,7 +72,7 @@ layout: default
 
 
                         function fetchFileData() {
-                              fetch('../../assets/publications.json')
+                              fetch('../../_data/publications.json')
                                     .then(response => {
                                           // Check if the request was successful
                                           if (!response.ok) {
@@ -85,7 +85,8 @@ layout: default
                                           let authors_data, stats; // We are gonna work with one author for now
                                           console.log("Reading was successful!");
                                           // change the first index to change the author
-                                          authors_data = data[index][1]; // Publications 
+                                          authors_data = data; // Publications 
+                                          console.log(authors_data)
                                           stats = publsPerYear(authors_data);
                                           stats.sort((a, b) => a.year - b.year);
 
