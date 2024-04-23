@@ -9,7 +9,7 @@ layout: default
 <main class="my-4">
       <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
             <div class="staff-profile">
-                  <h3 class="display-4">{{ page.title }}</h3>
+                  <h3 class="display-4" id="title">{{ page.title }}</h3>
                   <div class="staff-profile-info">
                         <div class="staff-avatar-container">
                               <img src="{{ page.avatar }}">
@@ -59,8 +59,16 @@ layout: default
                         }
 
 
-                        
-
+                        // Find the index that indicates the author's publications
+                        function findAuthor(jsonData) {
+                              // jsonData[i][0][0]["author_name"], change the i == change the author
+                              let author_name = document.getElementById("title").innerText;
+                              for (let i=0; i<jsonData.length; i++) {
+                                    if (jsonData[i][0][0]["author_name"] === author_name) {
+                                          return i;
+                                    }
+                              }
+                        }
 
 
                         function fetchFileData() {
@@ -73,9 +81,11 @@ layout: default
                                           return response.json();
                                     })
                                     .then(data => {
+                                          index = findAuthor(data) ;
                                           let authors_data, stats; // We are gonna work with one author for now
                                           console.log("Reading was successful!");
-                                          authors_data = data[0][1]; // Publications 
+                                          // change the first index to change the author
+                                          authors_data = data[index][1]; // Publications 
                                           stats = publsPerYear(authors_data);
                                           stats.sort((a, b) => a.year - b.year);
 
