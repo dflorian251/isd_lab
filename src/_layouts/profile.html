@@ -44,32 +44,81 @@ layout: default
                   <canvas id="chart" width="500px">
                   </canvas>
                   <script>
-                        const ctx = document.getElementById('chart').getContext('2d');
-                
-                        const xyValues = [
-                            {x:50, y:7},
-                            {x:60, y:8},
-                            {x:70, y:8},
-                            {x:80, y:9},
-                            {x:90, y:9},
-                            {x:100, y:9},
-                            {x:110, y:10},
-                            {x:120, y:11},
-                            {x:130, y:14},
-                            {x:140, y:14},
-                            {x:150, y:15}
+                        function publsPerYear(total_publs) {
+                              let yearPubls = [] ;
+                              total_publs.forEach(publ => {
+                                    if ( yearPubls.some( item => item.year === publ["year"] ) ) {
+                                          let index = yearPubls.findIndex( item => item.year === publ["year"] ) ;
+                                          yearPubls[index]["count"]++ ;
+
+                                    } else {
+                                          yearPubls.push({year: publ["year"], count: 1 })
+                                    }
+                              });
+                              return yearPubls;
+                        }
+
+
+                        
+
+
+
+                        function fetchFileData() {
+                              fetch('../../assets/publications.json')
+                                    .then(response => {
+                                          // Check if the request was successful
+                                          if (!response.ok) {
+                                          throw new Error('Network response was not ok ' + response.statusText);
+                                          }
+                                          return response.json();
+                                    })
+                                    .then(data => {
+                                          let authors_data, stats; // We are gonna work with one author for now
+                                          console.log("Reading was successful!");
+                                          authors_data = data[0][1]; // Publications 
+                                          stats = publsPerYear(authors_data);
+                                          stats.sort((a, b) => a.year - b.year);
+
+                                          new Chart( document.getElementById("chart"), {
+                                                      type: 'bar',
+                                                      data: {
+                                                            labels: stats.map(row => row.year),
+                                                            datasets: [ {
+                                                                  label: 'Publications per year',
+                                                                  data: stats.map(row => row.count)
+                                                            }]
+                                                      }
+                                                }
+                                          );
+                                          
+
+                                          let maxNumPubls = findMax(stats);
+                                          const BAR_HEIGHT = 60; // in px
+                                          let heightPerEachPud = BAR_HEIGHT / maxNumPubls;
+                                          heightPerEachPud = `${String(heightPerEachPud)}px`
+                                          
+                                    })
+                                    .catch(error => {
+                                          console.error('Error fetching file:', error);
+                                    });
+                        }
+
+                        fetchFileData();
+                        const chart = document.getElementById('chart').getContext('2d');
+
+                        const data = [
+                        { year: 2010, count: 10 },
+                        { year: 2011, count: 20 },
+                        { year: 2012, count: 15 },
+                        { year: 2013, count: 25 },
+                        { year: 2014, count: 22 },
+                        { year: 2015, count: 30 },
+                        { year: 2016, count: 28 },
                         ];
-                
-                        new Chart(ctx, {
-                            type: "scatter",
-                            data: {
-                                datasets: [{
-                                    pointRadius: 4,
-                                    pointBackgroundColor: "rgba(0,0,255,1)",
-                                    data: xyValues
-                                }]
-                            },
-                        });
+                        
+
+                        
+
                     </script>
                   
                   <table class="publications-container">
