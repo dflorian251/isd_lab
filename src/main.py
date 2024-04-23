@@ -1,9 +1,8 @@
-import argparse
-from serpapi import GoogleSearch
+from scholarly import scholarly
 import json
-from dotenv import load_dotenv
-import os
 import yaml
+
+
 
 def get_members_ids():
 	with open('_data/staff.yml', 	'r') as f:
@@ -14,15 +13,6 @@ def get_members_ids():
 	return authors_ids
 
 
-def get_members_names():
-	with open('_data/staff.yml', 	'r') as f:
-		staff_data = yaml.full_load(f)
-	authors_names = []
-	for i in range (0, len(staff_data)):
-		authors_names.append(staff_data[i]["name"])
-	return authors_names
-
-
 def get_member_name(search_id):
 	with open('_data/staff.yml', 	'r') as f:
 		staff_data = yaml.full_load(f)
@@ -30,43 +20,21 @@ def get_member_name(search_id):
 		if staff_data[i]["author_id"] == search_id:
 			return staff_data[i]["name"]
 
-# def get_author_url(author_id):
-# 	with open('_data/staff.yml', 'r') as f:
-# 		staff_data = yaml.full_load(f)
-# 	for i in range (0, len(staff_data)):
-# 		if ( staff_data[i]["author_id"] == author_id):
-# 			return staff_data[i]["url"]
-		
 
-def get_member_scholar(author_id, api_key):
-	params = {
-	  "api_key": api_key,
-	  "engine": "google_scholar_author",
-	  "hl": "en",
-	  "author_id": author_id,
-	}
-	search = GoogleSearch(params)
-	results = search.get_dict()
-	return results
-
-
- 
-	    
 	    
 if __name__ == "__main__":
-
-	load_dotenv()
-	api_key = os.getenv("SARPAPI_API_KEY")
-	members_list = get_members_ids()
-	for author_id in members_list:
+	authors_ids = get_members_ids()
+	for author_id in authors_ids:
 		if (author_id == None):
 			continue
-		member_data = get_member_scholar(author_id, api_key)
+      	
+		author = scholarly.search_author_id(author_id)
+		result = scholarly.fill(author, sections=["publications"])
 		author_name = get_member_name(author_id)
 		author = [
 				{"author_name": author_name}
 		]
-		data = [author, member_data["articles"]]
+		data = [author, result["publications"]]
 		data = json.dumps(data, indent=4)
 		data = f"{data},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
 		data = data.replace("N/N", '\n')
@@ -86,5 +54,4 @@ if __name__ == "__main__":
 	with open(f"./_data/publications.json", "w+") as file:
 		file.write(json_contents)
 		file.close()
-	
 	
