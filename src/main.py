@@ -76,11 +76,12 @@ if __name__ == "__main__":
 		load_dotenv()
 		api_key = os.getenv("SARPAPI_API_KEY")
 		result = get_member_scholar(author_id, api_key, start_param)
-		citations = json.dumps(result["articles"], indent=4)
-		citations = f"{citations},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
-		citations = citations.replace("N/N", '\n')
+		data = [author, result["articles"]]
+		data = json.dumps(data, indent=4)
+		data = f"{data},N/N" # N/N indicates that there should be start a newline. Couldn't in a different way start a newline :/
+		data = data.replace("N/N", '\n')
 		with open("./_data/citations.json", "a+") as file:
-			file.write(citations)
+			file.write(data)
 			file.close()
 
 
