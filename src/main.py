@@ -30,6 +30,7 @@ if __name__ == "__main__":
       	
 		author = scholarly.search_author_id(author_id)
 		result = scholarly.fill(author, sections=["publications"])
+		
 		author_name = get_member_name(author_id)
 		author = [
 				{"author_name": author_name}

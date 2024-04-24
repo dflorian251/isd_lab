@@ -136,10 +136,10 @@ layout: default
                                           {% for article in articles %}
                                                 <tr class="publication">
                                                       <td class="publication-year">
-                                                            {{ article.year}}
+                                                            {{ article.bib.pub_year}}
                                                       </td>
                                                       <td class="publication-type">
-                                                      {% assign publication_type = article.publication | downcase %}
+                                                      {% assign publication_type = article.bib.citation | downcase %}
                                                       {% assign type_journal = "journal" %}
                                                       {% assign type_conference = "conference" %}
                                                       {% if publication_type contains type_journal %}
@@ -147,11 +147,11 @@ layout: default
                                                       {% elsif publication_type contains type_conference%}
                                                             Conference
                                                       {% else %}
-                                                            Other
+                                                            Publication
                                                       {% endif %}
                                                       </td>
                                                       <td class="publication-title">
-                                                            {{ article.authors }}. {{ article.title }}. <i>{{ article.publication }}</i>
+                                                            {{ article.authors }}. {{ article.bib.title }}. <i>{{ article.bib.citation }}</i>
                                                       </td>
                                                 </tr>
                                           {% endfor %}
