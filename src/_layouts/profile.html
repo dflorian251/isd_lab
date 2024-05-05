@@ -7,7 +7,7 @@ layout: default
 {% assign index_bg = site.data.skin.index.bg  | default: 'gray-2' %}
 
 <main class="my-4">
-      <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
+      <div class="container px-5 py-3 bg-blue-9 rounded">
             <div class="staff-profile">
                   <h3 class="display-4" id="title">{{ page.title }}</h3>
                   <div class="staff-profile-info">
@@ -41,7 +41,7 @@ layout: default
             <div class="staff-profile-bio">
                   <h2 class="display-6">Publications</h2>
 
-                  <canvas id="chart" width="500px">
+                  <canvas id="chart" width="500px" style="background-color: #fff;">
                   </canvas>
                   <script>
                         function publsPerYear(total_publs) {
@@ -69,7 +69,6 @@ layout: default
                                     }
                               }
                         }
-
 
                         function fetchFileData() {
                               fetch('../../assets/publications.json')

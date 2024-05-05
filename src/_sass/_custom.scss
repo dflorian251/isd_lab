@@ -54,7 +54,7 @@
 }
 
 .staff-list li .staff-name-container .staff-name a {
-      color: #343a40;
+      color: #fff;
 }
 
 .staff-list li .staff-name-container .staff-name a:hover {
@@ -121,8 +121,11 @@ XX-Large devices (larger desktops, 1400px and up)
 }
 
 .odd {
-      background-color: #ffffff;;
+      background-color: #fff;
+      color: #1864ab;
 }
+
+
 
 
 // HOME PAGE
@@ -149,4 +152,10 @@ XX-Large devices (larger desktops, 1400px and up)
 
 .title-container > #databases.paralax-container {
       padding-left: 6rem;
+}
+
+
+
+.rounded {
+      color: #fff
 }
