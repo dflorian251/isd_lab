@@ -6,7 +6,7 @@ layout: default
 {% include header.html %}
 {% assign index_bg = site.data.skin.index.bg  | default: 'gray-2' %}
 
-<main class="my-4">
+<!-- <main class="my-4">
     <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
         <h1 class="display-3">{{ site.title }}</h1>
         <p class="lead">{{ description }}</p>
@@ -32,5 +32,24 @@ layout: default
         {% endif %}
     </div>
 </main>
+ -->
+<main class="my-4 container">
+    <div class="title-container">
+        <div class="paralax-container">
+            <div class="paralax"></div>
+            <h1 class="title-s1">Information Systems</h1>
+        </div>
 
+        <div class="paralax-container" id="amp">
+            <div class="paralax"></div>
+            <h1 class="title-s2">&</h1>
+        </div>
+
+        <div class="paralax-container" id="databases">
+            <div class="paralax"></div>
+            <h1 class="title-s3">Databases</h1>
+        </div>
+        
+    </div>
+</main>
 {% include footer.html %}

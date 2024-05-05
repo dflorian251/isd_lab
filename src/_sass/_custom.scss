@@ -3,7 +3,13 @@
       justify-content: right;
 }
 
+.navbar > .navbar-brand > .navbar-logo {
+      width: 100px;
+}
 
+.navbar {
+      height: 5rem;
+}
 
 .staff-list {
       margin-top: 3rem;
@@ -116,4 +122,31 @@ XX-Large devices (larger desktops, 1400px and up)
 
 .odd {
       background-color: #ffffff;;
+}
+
+
+// HOME PAGE
+.title-container {
+      width: 90%;
+      margin: auto;
+      padding-top: 10rem;
+}
+
+.title-container > .paralax-container {
+      margin: 1rem 0;
+}
+
+.title-container > .paralax-container > h1 {
+      font-size: 5rem;
+      width: fit-content;
+      background-color: purple;
+}
+
+.title-container > #amp.paralax-container {
+      padding-left: 20rem;
+}
+ 
+
+.title-container > #databases.paralax-container {
+      padding-left: 6rem;
 }

@@ -115,63 +115,66 @@ layout: default
                         }
 
                         fetchFileData();
-                    </script>
+                  </script>
                   
-                  <table class="publications-container" style="margin-top: 3rem;">
-                        <thead>
-                              <tr>
-                                    <th>Year</th>
-                                    <th>Type</th>
-                                    <th>Publication</th>
-                              </tr>
-                        </thead>
-                        <tbody>
-                              {% for author in site.data.citations %}
-                                    {% assign author_details = author[0][0] %}
-                                    {% if author_details.author_name == page.title %}
-                                          <script>
-                                                var counter = 0;
-                                          </script>
-                                          {% assign articles = author[1] %}
-                                          {% for article in articles %}
-                                                <tr class="publication">
-                                                      <td class="publication-year">
-                                                            {{ article.year}}
-                                                      </td>
-                                                      <td class="publication-type">
-                                                      {% assign publication_type = article.bib.citation | downcase %}
-                                                      {% assign type_journal = "journal" %}
-                                                      {% assign type_conference = "conference" %}
-                                                      {% if publication_type contains type_journal %}
-                                                            Journal
-                                                      {% elsif publication_type contains type_conference%}
-                                                            Conference
-                                                      {% else %}
-                                                            Publication
-                                                      {% endif %}
-                                                      </td>
-                                                      <td class="publication-title">
-                                                            {{ article.authors }}. {{ article.title }}. <i>{{ article.publication }}</i>
-                                                      </td>
-                                                </tr>
-                                          {% endfor %}
-                                          <script>
-                                                var tRows = document.querySelectorAll(".publication");
-                                                tRows.forEach(tRow => {
-                                                      counter++;
-                                                      if (counter%2 == 0) {
-                                                            tRow.classList.add("even");
-                                                      } else {
-                                                            tRow.classList.add("odd");
-                                                      }
-                                                });
-                                                
-                                          </script>
-                                    {% endif %}
-                              {% endfor %}
-                              
-                        </tbody>
-                  </table>
+                  <div style="overflow-x: auto;">
+                  
+                        <table class="publications-container" style="margin-top: 3rem;">
+                              <thead>
+                                    <tr>
+                                          <th>Year</th>
+                                          <th>Type</th>
+                                          <th>Publication</th>
+                                    </tr>
+                              </thead>
+                              <tbody>
+                                    {% for author in site.data.citations %}
+                                          {% assign author_details = author[0][0] %}
+                                          {% if author_details.author_name == page.title %}
+                                                <script>
+                                                      var counter = 0;
+                                                </script>
+                                                {% assign articles = author[1] %}
+                                                {% for article in articles %}
+                                                      <tr class="publication">
+                                                            <td class="publication-year">
+                                                                  {{ article.year}}
+                                                            </td>
+                                                            <td class="publication-type">
+                                                            {% assign publication_type = article.bib.citation | downcase %}
+                                                            {% assign type_journal = "journal" %}
+                                                            {% assign type_conference = "conference" %}
+                                                            {% if publication_type contains type_journal %}
+                                                                  Journal
+                                                            {% elsif publication_type contains type_conference%}
+                                                                  Conference
+                                                            {% else %}
+                                                                  Publication
+                                                            {% endif %}
+                                                            </td>
+                                                            <td class="publication-title">
+                                                                  {{ article.authors }}. {{ article.title }}. <i>{{ article.publication }}</i>
+                                                            </td>
+                                                      </tr>
+                                                {% endfor %}
+                                                <script>
+                                                      var tRows = document.querySelectorAll(".publication");
+                                                      tRows.forEach(tRow => {
+                                                            counter++;
+                                                            if (counter%2 == 0) {
+                                                                  tRow.classList.add("even");
+                                                            } else {
+                                                                  tRow.classList.add("odd");
+                                                            }
+                                                      });
+                                                      
+                                                </script>
+                                          {% endif %}
+                                    {% endfor %}
+                                    
+                              </tbody>
+                        </table>
+                  </div>
             </div>
       </div>
 </main>
