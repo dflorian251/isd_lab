@@ -1,10 +1,6 @@
 header:
   bg: white-0
 
-nav-link:
-  color: blue-9
-  hover: red-9
-
 index:
-  bg: blue-9
+  bg: white-0
 

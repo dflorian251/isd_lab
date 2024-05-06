@@ -4,7 +4,7 @@ title: Staff
 description: ""
 navorder: 1
 ---
-<h2>Faculty Members</h2>
+<h2 class="theme-color" >Faculty Members</h2>
 <ul class = "staff-list" id = "faculty-staff">
   {% assign faculty_staff = site.data.staff | where: "member", "faculty" %}
   {% for staff in faculty_staff %}
@@ -27,7 +27,7 @@ navorder: 1
   {% endfor %}
 </ul>
 
-<h2>Researchers</h2>
+<h2 class="theme-color" >Researchers</h2>
 <ul class = "staff-list">
   {% assign researchers_staff = site.data.staff | where: "member", "researcher" %}
   {% for staff in researchers_staff %}

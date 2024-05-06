@@ -4,10 +4,10 @@ layout: default
 
 {% include metadata.liquid %}
 {% include header.html %}
-{% assign index_bg = site.data.skin.index.bg  | default: 'gray-2' %}
+{% assign index_bg = "theme-bg"  | default: 'gray-2' %}
 
 <main class="my-4">
-      <div class="container px-5 py-3 bg-blue-9 rounded">
+      <div class="container px-5 py-3 {{ index_bg }} rounded">
             <div class="staff-profile">
                   <h3 class="display-4" id="title">{{ page.title }}</h3>
                   <div class="staff-profile-info">
@@ -28,7 +28,7 @@ layout: default
 </main>
 
 <main class="my-4">
-      <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
+      <div class="container px-5 py-3 {{ index_bg }} rounded">
             <div class="staff-profile-bio">
                   <h2 class="display-6">Biographical Information</h2>
                   {{ page.bio | newline_to_br}}
@@ -37,7 +37,7 @@ layout: default
 </main>
 
 <main class="my-4">
-      <div class="container px-5 py-3 bg-{{ index_bg }} rounded">
+      <div class="container px-5 py-3 {{ index_bg }} rounded">
             <div class="staff-profile-bio">
                   <h2 class="display-6">Publications</h2>
 
@@ -70,6 +70,8 @@ layout: default
                               }
                         }
 
+                        
+
                         function fetchFileData() {
                               fetch('../../assets/publications.json')
                                     .then(response => {
@@ -95,7 +97,8 @@ layout: default
                                                             labels: stats.map(row => row.year),
                                                             datasets: [ {
                                                                   label: 'Publications per year',
-                                                                  data: stats.map(row => row.count)
+                                                                  data: stats.map(row => row.count),
+                                                                  backgroundColor: "#1b4377"
                                                             }]
                                                       }
                                                 }
@@ -163,7 +166,8 @@ layout: default
                                                             if (counter%2 == 0) {
                                                                   tRow.classList.add("even");
                                                             } else {
-                                                                  tRow.classList.add("odd");
+                                                                  tRow.classList.add("odd", "theme-color");
+                                                                  
                                                             }
                                                       });
                                                       
