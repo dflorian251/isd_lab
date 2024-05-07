@@ -3,12 +3,14 @@ layout: default
 ---
 
 {% include metadata.liquid %}
+<div id="waveBG">
+    <canvas width="1920" height="205" style="width: 1920px; height: 205px;"></canvas>
+</div>
 {% include header.html %}
 
 <main class="my-4">
     <div class="container">
         <h1 class="display-5 theme-color">{{ title }}</h1>
-    
         {{ content }}
         <div class="contact-info">
             ISD Lab<br>
@@ -23,3 +25,6 @@ layout: default
 </main>
 
 {% include footer.html %}
+
+<script type="module" src="/assets/js/threeD.js"></script>
+

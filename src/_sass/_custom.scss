@@ -179,3 +179,15 @@ XX-Large devices (larger desktops, 1400px and up)
 .contact-info {
       margin: 2rem 0;
 }
+
+#waveBG {
+      height: 100vh;
+  width: 100%;
+  overflow: hidden;
+    overflow-y: hidden;
+  overflow-y: hidden;
+  position: absolute;
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  z-index: -1;
+}
