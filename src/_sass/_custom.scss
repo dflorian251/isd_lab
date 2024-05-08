@@ -1,4 +1,8 @@
 // NAVIGATION BAR
+header {
+      background-color: white;
+}
+
 #navigation {
       justify-content: right;
 }
@@ -143,11 +147,10 @@ XX-Large devices (larger desktops, 1400px and up)
 
 
 // HOME PAGE
-// .homepage-container {
-//       display: flex;
-//       width: 80%;
-//       margin: auto;
-// }
+.homepage-content {
+      background-color: white;
+      margin-top: 0 !important;
+}
 
 .homepage-container canvas {
       width: 100%;
