@@ -1,6 +1,12 @@
+// GENERAL
+body {
+      background-color: #fff;
+      color: #000;
+}
+
 // NAVIGATION BAR
 header {
-      background-color: white;
+      background-color: #fff;
 }
 
 #navigation {
@@ -22,6 +28,21 @@ header {
 .nav-link:hover, .active {
       color: #1b4377 !important;
       text-decoration: underline;
+}
+
+
+// STAFF PAGE STYLES
+.staff-buttons-container {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+}
+
+.staff-buttons-container > .staff-button > li {
+      outline: #1b4377 3px solid;
+      font-weight: 600;
+      padding: 0rem 2rem;
+      color: #1b4377;
 }
 
 .staff-list {
@@ -184,14 +205,6 @@ XX-Large devices (larger desktops, 1400px and up)
 .title-container > #databases.paralax-container {
       padding-left: 6rem;
 }
-
-
-
-
-.rounded {
-      color: #fff
-}
-
 
 // CONTACT PAGE
 .contact-info {

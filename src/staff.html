@@ -10,9 +10,23 @@ navorder: 1
 <main class="my-4">
   <div class="container px-5 py-3 bg-{{index_bg}} rounded">
       <h1 class="display-3 theme-color">{{ page.title }}</h1>
-      <p class="lead">{{ description }}</p>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto corporis eligendi fugiat fuga doloribus maiores, voluptatem, blanditiis itaque incidunt voluptas optio molestiae quia. Cumque optio nemo aliquid autem esse. Totam.</p>
+      <ul class="staff-buttons-container">
+        <a  class="staff-button" href="#faculty-members">
+          <li>Faculty</li>
+        </a>
+        <a  class="staff-button" href="#">
+          <li>PhDs</li>
+        </a>
+        <a  class="staff-button" href="#">
+          <li>Postdocs</li>
+        </a>
+        <a  class="staff-button" href="#researchers-members">
+          <li>Researchers</li>
+        </a>
+      </ul>
       <hr class="my-4">
-      <h2 class="theme-color" >Faculty Members</h2>
+      <h2 class="theme-color" id="faculty-members">Faculty Members</h2>
       <ul class = "staff-list" id = "faculty-staff">
         {% assign faculty_staff = site.data.staff | where: "member", "faculty" %}
         {% for staff in faculty_staff %}
@@ -35,7 +49,7 @@ navorder: 1
         {% endfor %}
       </ul>
       
-      <h2 class="theme-color" >Researchers</h2>
+      <h2 class="theme-color" id="researchers-members">Researchers</h2>
       <ul class = "staff-list">
         {% assign researchers_staff = site.data.staff | where: "member", "researcher" %}
         {% for staff in researchers_staff %}
