@@ -217,6 +217,16 @@ XX-Large devices (larger desktops, 1400px and up)
       padding-left: 6rem;
 }
 
+
+// RESEARCH AREAS
+.research-area-container .research-area-info {
+      display: flex;
+}
+
+.research-area-container .research-area-info p {
+      flex: 2 1 auto;
+}
+
 // CONTACT PAGE
 .contact-info {
       margin: 2rem 0;
