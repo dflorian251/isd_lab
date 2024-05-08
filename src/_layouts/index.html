@@ -34,7 +34,6 @@ layout: default
 </main>
  -->
 <div id="animationBG">
-    <canvas style="width: 1920px; height: 489px;"></canvas>
 </div>
 <main class="my-4 container">
     <div class="title-container">
@@ -264,10 +263,9 @@ layout: default
 
         const extrudeSettings = { depth: 8, bevelEnabled: true, bevelSegments: 2, steps: 2, bevelSize: 1, bevelThickness: 1 };
 
-        // addShape( californiaShape, extrudeSettings, 0xf08000, 200, -100, 100, 0, 0, 0, 1, 0 );
-        addShape( shape1, extrudeSettings, 0xf08000, -150, 50, 100, 0, 0, 0, 1, 0 );
-        addShape( shape2, extrudeSettings, 0xf08000, -60, 50, 100, 0, 0, 0, 1, 0 ); 
-        addShape( shape3, extrudeSettings, 0xf08000, 40, 50, 100, 0, 0, 0, 1, 1 ); 
+        addShape( shape1, extrudeSettings, 0xf08000, -10, -100, 100, 0, 0, 0, 1, 0 );
+        addShape( shape2, extrudeSettings, 0xf08000, 80, -100, 100, 0, 0, 0, 1, 0 ); 
+        addShape( shape3, extrudeSettings, 0xf08000, 180, -100, 100, 0, 0, 0, 1, 1 ); 
         
 
         renderer = new THREE.WebGLRenderer( { antialias: true } );
@@ -333,6 +331,7 @@ layout: default
     }
 
     function render() {
+        group.rotation.y -= 0.01
         group.rotation.y += ( targetRotation - group.rotation.y ) * 0.05;
         renderer.render( scene, camera );
 
