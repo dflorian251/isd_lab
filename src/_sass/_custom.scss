@@ -23,6 +23,7 @@ header {
 
 .nav-link {
       text-transform: uppercase;
+      transition: 0.2s ease-in;
 }
 
 .nav-link:hover, .active {
@@ -38,11 +39,17 @@ header {
       justify-content: space-between;
 }
 
+.staff-buttons-container > .staff-button > li:hover {
+      color: white;
+      background-color: #1b4377;
+}
+
 .staff-buttons-container > .staff-button > li {
       outline: #1b4377 3px solid;
       font-weight: 600;
       padding: 0rem 2rem;
       color: #1b4377;
+      transition: 0.2s ease-in;
 }
 
 .staff-list {
@@ -122,6 +129,9 @@ XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) { ... } */
 
 /* STAFF PROFILE STYLING */
+.staff-profile-container {
+      color: #fff;
+}
 
 .staff-profile .staff-profile-info {
       display: flex;
@@ -129,6 +139,7 @@ XX-Large devices (larger desktops, 1400px and up)
 
 .staff-profile .staff-profile-info .staff-profile-info-details {
       margin-left: 5rem;
+      line-height: 3rem;
 }
 
 .staff-profile .staff-profile-info .staff-avatar-container {
