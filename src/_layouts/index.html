@@ -34,10 +34,10 @@ layout: default
 </main>
  -->
 
-<div class="homepage-container" id="animationBG">
-    <div >
-    </div>
+<div class="homepage-container"></div>
     <main class="my-4 homepage-content">
+        <div id="animationBG">
+        </div>
         <div class="title-container">
             <div class="paralax-container">
                 <div class="paralax"></div>
@@ -118,7 +118,7 @@ layout: default
         colors = new Float32Array( segments * 3 );
 
         const pMaterial = new THREE.PointsMaterial( {
-            color: 0x000000,
+            color: 0x1b4377,
             size: 3,
             blending: THREE.CustomBlending,
             transparent: false,
@@ -163,7 +163,7 @@ layout: default
         geometry.setDrawRange( 0, 0 );
 
         const material = new THREE.LineBasicMaterial( {
-            color: 0xffffff,
+            color: 0x1b4377,
             vertexColors: true,
             blending: THREE.CustomBlending,
             transparent: true

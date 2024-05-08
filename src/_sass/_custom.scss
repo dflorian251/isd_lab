@@ -143,11 +143,11 @@ XX-Large devices (larger desktops, 1400px and up)
 
 
 // HOME PAGE
-.homepage-container {
-      display: flex;
-      width: 80%;
-      margin: auto;
-}
+// .homepage-container {
+//       display: flex;
+//       width: 80%;
+//       margin: auto;
+// }
 
 .homepage-container canvas {
       width: 100%;
@@ -157,6 +157,9 @@ XX-Large devices (larger desktops, 1400px and up)
       width: 90%;
       margin: auto;
       padding-top: 10rem;
+      position: absolute;
+      top: 10rem;
+      left: 10rem;
 }
 
 .title-container > .paralax-container {
