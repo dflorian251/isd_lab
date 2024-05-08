@@ -13,6 +13,10 @@ header {
       justify-content: right;
 }
 
+.navbar-expand-sm .navbar-nav .nav-link {
+      padding: 0 1rem;
+}
+
 .navbar > .navbar-brand > .navbar-logo {
       width: 100px;
 }

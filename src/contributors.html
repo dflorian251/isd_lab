@@ -1,17 +1,19 @@
 ---
 layout: default
+title: Contant
+description:
+navorder: 6
 ---
 
 {% include metadata.liquid %}
-<div id="waveBG">
-    <canvas width="1920" height="205" style="width: 1920px; height: 205px;"></canvas>
-</div>
 {% include header.html %}
+{% assign index_bg = site.data.skin.index.bg  | default: 'gray-2' %}
 
 <main class="my-4">
     <div class="container">
         <h1 class="display-5 theme-color">{{ title }}</h1>
-        {{ content }}
+        For inquiries or collaborations regarding our research in Information Systems and Databases, please contact us. We value your communication and will respond promptly.
+        <hr>
         <div class="contact-info">
             ISD Lab<br>
             Tsirigoti Square 7<br>
@@ -27,4 +29,3 @@ layout: default
 {% include footer.html %}
 
 <script type="module" src="/assets/js/threeD.js"></script>
-
