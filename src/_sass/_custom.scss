@@ -1,3 +1,8 @@
+:root {
+      --element-width: 1320px; /* Adjust the width of the element as needed */
+}
+    
+
 // GENERAL
 body {
       background-color: #fff;
@@ -232,6 +237,11 @@ XX-Large devices (larger desktops, 1400px and up)
 }
 
 // CONTACT PAGE
+#waveAnimationBG {
+      position: absolute;
+      filter: grayscale(90%);
+}
+
 .contact-info {
       margin: 2rem 0;
 }
