@@ -1,0 +1,32 @@
+---
+layout: default
+title: News
+description:
+navorder: 5
+---
+
+{% include metadata.liquid %}
+{% include header.html %}
+{% assign index_bg = site.data.skin.index.bg  | default: 'gray-2' %}
+
+<main class="my-4">
+    <div class="container px-5 py-3">
+        <h1 class="display-3 theme-color">{{ title }}</h1>
+        <hr>
+        <div class="aritcles-container">
+            <ul class="articles">
+                {% assign articles = site.data.articles %}
+                {% for article in articles %}
+                <li class="article">
+                    <h5 class="article-title">{{ article.title }}</h5>
+                    <date class="article-date">{{ article.date }}</date>
+                    <p class="article-desc">{{ article.description }}</p>
+                    <img class="article-thumb" src="{{ article.image }}">
+                </li>
+            </ul>
+                {% endfor %}
+        </div>
+    </div>
+</main>
+
+{% include footer.html %}
