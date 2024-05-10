@@ -1,5 +1,7 @@
 :root {
+      --primary-color: #1b4377;
       --element-width: 1320px; /* Adjust the width of the element as needed */
+
 }
     
 
@@ -8,6 +10,12 @@ body {
       background-color: #fff;
       color: #000;
 }
+
+hr {
+      border: var(--primary-color) 1px solid;
+      opacity: 0.75;
+}
+
 
 // NAVIGATION BAR
 header {
@@ -36,7 +44,7 @@ header {
 }
 
 .nav-link:hover, .active {
-      color: #1b4377 !important;
+      color: var(--primary-color) !important;
       text-decoration: underline;
 }
 
@@ -50,16 +58,18 @@ header {
 
 .staff-buttons-container > .staff-button > li:hover {
       color: white;
-      background-color: #1b4377;
+      background-color: var(--primary-color);
 }
 
 .staff-buttons-container > .staff-button > li {
-      outline: #1b4377 3px solid;
+      outline: var(--primary-color) 3px solid;
       font-weight: 600;
       padding: 0rem 2rem;
-      color: #1b4377;
+      color: var(--primary-color);
       transition: 0.2s ease-in;
 }
+
+
 
 .staff-list {
       margin-top: 3rem;
@@ -83,7 +93,7 @@ header {
 
 .staff-list li:hover .staff-name-container .staff-name a,
 .staff-list li:hover {
-      color: #1b4377;
+      color: var(--primary-color);
 }
 
 .staff-list li .staff-avatar-container {
@@ -234,6 +244,49 @@ XX-Large devices (larger desktops, 1400px and up)
 
 .research-area-container .research-area-info p {
       flex: 2 1 auto;
+}
+
+
+
+// NEWS PAGE
+.articles-container {
+      margin-top: 3rem;
+}
+
+.articles-container > .articles > .article {
+      display: flex;
+      gap: 1rem;
+}
+
+.articles-container > .articles > .article > .article-text-container > .article-title {
+      font-weight: 600;
+      font-size: 1.7rem;
+}
+
+.articles-container > .articles > .article > .article-text-container > .article-title > a {
+      color:#000;
+}
+
+.articles-container > .articles > .article > .article-text-container > .article-title > a:hover {
+      color: var(--primary-color);
+      
+}
+
+.articles-container > .articles > .article.even {
+      flex-direction: row-reverse;
+}
+
+.articles-container > .articles > .article > .article-text-container {
+      flex: 2 1 100%;
+}
+
+.articles-container > .articles > .article > .article-image-container {
+      width: 35%;
+}
+
+.articles-container > .articles > .article > .article-image-container > img {
+      width: 100%;
+      height: auto;
 }
 
 // CONTACT PAGE
