@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+{% include metadata.liquid %}
+{% include header.html %}
+{% assign index_bg = "theme-bg"  | default: 'gray-2' %}
+
+<main class="my-4 staff-profile-container">
+    <div class="container px-5 py-3 {{ index_bg }} rounded">
+        {{ page.title }}
+    </div>
+</main>

@@ -1,7 +1,7 @@
 title: ISD Lab
 description: Information Systems and Databases Laboratory
 baseurl: ""
-url: https://piazzai.github.io/jekyll-nagymaros
+url: 
 
 theme: jekyll-nagymaros
 
@@ -26,7 +26,11 @@ page_gen:
     template: 'profile'
     name: 'url'
     title: 'name'
-
+  
+  - data: 'news'
+    template: 'article'
+    name: 'date'
+    title: 'title'
 
 copyright: ISD LAB
 indexing: true

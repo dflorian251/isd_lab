@@ -15,12 +15,12 @@ navorder: 5
         <hr>
         <div class="articles-container">
             <ul class="articles">
-                {% assign articles = site.data.articles %}
+                {% assign articles = site.data.news %}
                 {% for article in articles %}
                 <li class="article">
                     <div class="article-text-container">
                         <h5 class="article-title">
-                            <a href="#">{{ article.title }}</a>
+                            <a href="{{ article.url }}">{{ article.title }}</a>
                         </h5>
                         <date class="article-date"><i class="fa-regular fa-calendar"></i> {{ article.date }}</date>
                         <p class="article-desc">{{ article.description }}</p>
