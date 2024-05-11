@@ -289,6 +289,62 @@ XX-Large devices (larger desktops, 1400px and up)
       height: auto;
 }
 
+
+// ARTICLE PAGE
+.news-article-title { 
+      background-color: #1b4377;
+      height: 15rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+}
+
+.news-article-title > h2 {
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto;
+      color:#fff;
+      font-weight: 700;
+}
+
+
+.article-container {
+      max-width: 1320px;
+      display: flex;
+      flex-direction: column;
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .5);
+      margin: 0 auto;
+}
+
+.article-container > .article-intro {
+      display: flex;
+      flex-direction: column;
+}
+
+.article-container > .article-intro > h2 {
+      background-color: #1b4377;
+}
+
+.article-container > img {
+      margin-top: 1rem;
+      max-width: 60%;
+}
+
+.article-container > p {
+      text-indent: 20px;
+      margin-top: 2rem;
+}
+
+.article-container > hr {
+      margin-bottom: 10rem;
+      margin-top: 5rem;
+      border-width: 5px;
+}
+
 // CONTACT PAGE
 #waveAnimationBG {
       position: absolute;

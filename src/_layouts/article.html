@@ -6,8 +6,20 @@ layout: default
 {% include header.html %}
 {% assign index_bg = "theme-bg"  | default: 'gray-2' %}
 
-<main class="my-4 staff-profile-container">
-    <div class="container px-5 py-3 {{ index_bg }} rounded">
-        {{ page.title }}
+
+<div>
+    <div class="news-article-title">
+        <h2 class="display-4">{{ page.title }}</h2>
     </div>
-</main>
+    <div class="rounded article-container">
+        <div class="article-intro">
+            <date class="article-date"><i class="fa-regular fa-calendar"></i> {{ page.date }}</date>
+        </div>
+        <img src="{{ page.image }}">
+        <p>{{ page.long-desc }}</p>
+        <hr>
+    </div>
+</div>
+
+
+{% include footer.html %}

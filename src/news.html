@@ -20,10 +20,10 @@ navorder: 5
                 <li class="article">
                     <div class="article-text-container">
                         <h5 class="article-title">
-                            <a href="{{ article.url }}">{{ article.title }}</a>
+                            <a href="{{ article.date }}">{{ article.title }}</a>
                         </h5>
                         <date class="article-date"><i class="fa-regular fa-calendar"></i> {{ article.date }}</date>
-                        <p class="article-desc">{{ article.description }}</p>
+                        <p class="article-desc">{{ article.short-desc }}</p>
                     </div>
                     <div class="article-image-container">
                         <img src="{{ article.image }}">
