@@ -244,8 +244,6 @@ XX-Large devices (larger desktops, 1400px and up)
       .staff-buttons-container > .staff-button > li {
             outline: var(--primary-color) 2px solid;
       }
-
- 
 }
 
 /* Medium devices (tablets, 768px and up) 
@@ -267,6 +265,11 @@ XX-Large devices (larger desktops, 1400px and up)
       color: #fff;
 }
 
+#title, .staff-profile-bio > h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+}
+
 .staff-profile .staff-profile-info {
       display: flex;
 }
@@ -274,6 +277,7 @@ XX-Large devices (larger desktops, 1400px and up)
 .staff-profile .staff-profile-info .staff-profile-info-details {
       margin-left: 5rem;
       line-height: 3rem;
+      font-size: clamp(1rem, 0.878988rem + 0.518vw, 1.3rem)
 }
 
 .staff-profile .staff-profile-info .staff-avatar-container {
@@ -286,6 +290,10 @@ XX-Large devices (larger desktops, 1400px and up)
       width: 300px;
       height: 300px;
       object-fit: contain;
+}
+
+.staff-profile-bio {
+      font-size: clamp(1rem, 0.878988rem + 0.518vw, 1.3rem)
 }
 
 .publications-container > tbody > .publication > td {
@@ -309,12 +317,20 @@ XX-Large devices (larger desktops, 1400px and up)
 @media (max-width: 767px){
       .staff-profile > .staff-profile-info {
             flex-direction: column;
+            align-items: center;
       }
 
       .staff-profile .staff-profile-info .staff-profile-info-details {
             margin-left: 0;
             margin-top: 1rem;
             line-height: 2rem;
+      }
+
+      .staff-profile .staff-profile-info .staff-avatar-container,
+      .staff-profile .staff-profile-info .staff-avatar-container img {
+            width: 250px;
+            height: 250px;
+            
       }
 }
 
