@@ -18,15 +18,15 @@ navorder: 5
                 {% assign articles = site.data.news %}
                 {% for article in articles %}
                 <li class="article">
+                    <div class="article-image-container">
+                        <img src="{{ article.image }}">
+                    </div>
                     <div class="article-text-container">
                         <h5 class="article-title">
                             <a href="{{ article.date }}">{{ article.title }}</a>
                         </h5>
                         <date class="article-date"><i class="fa-regular fa-calendar"></i> {{ article.date }}</date>
                         <p class="article-desc">{{ article.short-desc }}</p>
-                    </div>
-                    <div class="article-image-container">
-                        <img src="{{ article.image }}">
                     </div>
                 </li>
                 <hr class="articles-divider">

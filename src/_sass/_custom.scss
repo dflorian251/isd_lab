@@ -17,7 +17,7 @@ hr {
       opacity: 0.75;
 }
 
-p, a {
+p, a, date {
       font-size: clamp(1rem, 0.878988rem + 0.518vw, 1.3rem);
 }
 
@@ -375,6 +375,7 @@ XX-Large devices (larger desktops, 1400px and up)
 
 .articles-container > .articles > .article > .article-text-container > .article-title > a {
       color:#000;
+      font-size: clamp(1.5rem, 1.378988rem + 0.518vw, 2rem);
 }
 
 .articles-container > .articles > .article > .article-text-container > .article-title > a:hover {
@@ -398,6 +399,35 @@ XX-Large devices (larger desktops, 1400px and up)
       width: 100%;
       height: auto;
 }
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .articles-container > .articles > .article.even,
+      .articles-container > .articles > .article.odd {
+            flex-direction: column;
+      }
+
+      .articles-container > .articles > .article > .article-image-container {
+            width: 90%;
+      }
+
+      .articles-container > .articles > .article > .article-text-container > .article-title > a {
+            font-size: clamp(1.5rem, 1.378988rem + 0.518vw, 2rem);
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
 
 
 // ARTICLE PAGE
