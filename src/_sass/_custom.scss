@@ -17,6 +17,12 @@ hr {
       opacity: 0.75;
 }
 
+p, a {
+      font-size: clamp(1rem, 0.878988rem + 0.518vw, 1.3rem);
+}
+
+
+
 
 
 // NAVIGATION BAR
@@ -57,7 +63,7 @@ header {
       }
 
       .navbar > .navbar-brand > .navbar-logo {
-            width: 90px;
+            width: 80px;
       }
 
       .navbar > .navbar-collapse {
@@ -104,7 +110,7 @@ XX-Large devices (larger desktops, 1400px and up)
 }
 
 .title-container > .paralax-container > h1 {
-      font-size: clamp(2rem, 1.273947rem + 3.1073vw, 5rem); 
+      font-size: clamp(2rem, 0.059974rem + 8.289vw, 10rem); 
       width: fit-content;
       background-image: url("/assets/images/title_bg.jpg");
       color: white;
@@ -213,6 +219,7 @@ XX-Large devices (larger desktops, 1400px and up)
 
 .staff-list li .staff-name-container .staff-name a {
       color: #000;
+      font-size: 1.5rem;
 }
 
 .staff-list li .staff-name-container .staff-name a:hover {
@@ -233,6 +240,12 @@ XX-Large devices (larger desktops, 1400px and up)
             gap: 1rem;
             padding-left: 0;
       }
+      
+      .staff-buttons-container > .staff-button > li {
+            outline: var(--primary-color) 2px solid;
+      }
+
+ 
 }
 
 /* Medium devices (tablets, 768px and up) 
@@ -275,10 +288,6 @@ XX-Large devices (larger desktops, 1400px and up)
       object-fit: contain;
 }
 
-
-
-// AUTHOR'S PUBLICATIONS LIST
-// for page _layouts/profile.html
 .publications-container > tbody > .publication > td {
    padding: 3px 10px;
 }
@@ -295,6 +304,31 @@ XX-Large devices (larger desktops, 1400px and up)
 .odd {
       background-color: #fff;
 }
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .staff-profile > .staff-profile-info {
+            flex-direction: column;
+      }
+
+      .staff-profile .staff-profile-info .staff-profile-info-details {
+            margin-left: 0;
+            margin-top: 1rem;
+            line-height: 2rem;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
 
 
 // RESEARCH AREAS
