@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Contact | ISD Lab</title>
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Contact" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Information Systems and Databases Laboratory" />
+<meta property="og:description" content="Information Systems and Databases Laboratory" />
+<link rel="canonical" href="http://localhost:4000/contact/" />
+<meta property="og:url" content="http://localhost:4000/contact/" />
+<meta property="og:site_name" content="ISD Lab" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Contact" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Information Systems and Databases Laboratory","headline":"Contact","url":"http://localhost:4000/contact/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/leaflet.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/open-color.css">
+    <link rel="stylesheet" href="http://localhost:4000/assets/css/styles.css">
+    
+    <script type="module" src="../../chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2"></script>
+
+    <script src="https://kit.fontawesome.com/c4f6644410.js" crossorigin="anonymous"></script>
+
+    <script type="importmap"> { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/" } } </script>
+</head>
+
+
+<body>
+    
+
+
+<header class="bg-white-0">
+      <div class="container">
+          <nav class="navbar navbar-expand-sm">
+              <a class="navbar-brand" href="http://localhost:4000">
+                <img class="navbar-logo" src="/assets/images/logo.png">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navigation">
+                  <div class="navbar-nav">
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a class="nav-link" href="http://localhost:4000/">Home</a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a class="nav-link" href="http://localhost:4000/staff/">Staff</a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a class="nav-link" href="http://localhost:4000/reseach/">Research Areas</a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a class="nav-link" href="http://localhost:4000/news/">News</a>
+                      
+                      
+                      
+                      
+                      
+                      
+                      
+                      <a class="nav-link" href="http://localhost:4000/contact/">Contact</a>
+                      
+                      
+                      
+                  </div>
+              </div>
+          </nav>
+      </div>
+  </header>
+
+
+<main class="my-4 contact-container">
+    <div id="waveAnimationBG" style="z-index: -1;"></div>
+    <div class="container contact-content px-5 py-3">
+        <h1 class="display-3 theme-color">Contact</h1>
+        For inquiries or collaborations regarding our research in Information Systems and Databases, please contact us. We value your communication and will respond promptly.
+        <hr>
+        <div class="contact-info">
+            ISD Lab<br>
+            Tsirigoti Square 7<br>
+            49100, Corfu, Greece<br>
+            Tel: +30 26610 87869 | +30 26610 87768<br>
+            Email: isdlab@ionio.gr
+        </div>    
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6659.059281702919!2d19.911452861601113!3d39.616689438838016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b5dd9c2a6c193%3A0xc06c8f763f24ce59!2sDepartment%20of%20Informatics%20-%20Ionian%20University!5e0!3m2!1sen!2sgr!4v1714988992121!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</main>
+
+
+
+<footer class="container mb-4">
+    <small class="text-muted">Copyright &copy;2024 ISD LAB. All rights reserved.</small>
+    <small class="text-muted developer-info">
+        <small class="text-muted">Design & Developed with </small>
+        <span class="fa-solid fa-heart"></span>
+        <small>by Florian Dima</small>
+    </small>
+
+</footer>
+
+
+<script type="x-shader/x-vertex" id="vertexshader">
+
+    attribute float scale;
+
+    void main() {
+
+        vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+
+        gl_PointSize = scale * ( 300.0 / - mvPosition.z );
+
+        gl_Position = projectionMatrix * mvPosition;
+
+    }
+
+</script>
+
+
+<script type="x-shader/x-fragment" id="fragmentshader">
+
+    uniform vec3 color;
+
+    void main() {
+
+        if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+
+        gl_FragColor = vec4( color, 1.0 );
+
+    }
+
+</script>
+<script type="module">
+
+    import * as THREE from 'three';
+
+    const SEPARATION = 100, AMOUNTX = 100, AMOUNTY = 30;
+
+    let container;
+    let camera, scene, renderer;
+
+    let particles, count = 0;
+
+    let mouseX = 0, mouseY = 0;
+
+    let windowHalfX = window.innerWidth / 2;
+    let windowHalfY = window.innerHeight / 2;
+
+    init();
+
+    function init() {
+
+        container = document.getElementById('waveAnimationBG');
+
+        camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
+        camera.position.z = 1000;
+        camera.position.y = 500;
+
+        scene = new THREE.Scene();
+        scene.background = new THREE.Color( 0xffffff );
+
+        //
+
+        const numParticles = AMOUNTX * AMOUNTY;
+
+        const positions = new Float32Array( numParticles * 3 );
+        const scales = new Float32Array( numParticles );
+
+        let i = 0, j = 0;
+
+        for ( let ix = 0; ix < AMOUNTX; ix ++ ) {
+
+            for ( let iy = 0; iy < AMOUNTY; iy ++ ) {
+
+                positions[ i ] = ix * SEPARATION - ( ( AMOUNTX * SEPARATION ) / 2 ); // x
+                positions[ i + 1 ] = 0; // y
+                positions[ i + 2 ] = iy * SEPARATION - ( ( AMOUNTY * SEPARATION ) / 2 ); // z
+
+                scales[ j ] = 1;
+
+                i += 3;
+                j ++;
+
+            }
+
+        }
+
+        const geometry = new THREE.BufferGeometry();
+        geometry.setAttribute( 'position', new THREE.BufferAttribute( positions, 3 ) );
+        geometry.setAttribute( 'scale', new THREE.BufferAttribute( scales, 1 ) );
+
+        const material = new THREE.ShaderMaterial( {
+
+            uniforms: {
+                color: { value: new THREE.Color( 0xdedede ) },
+            },
+            vertexShader: document.getElementById( 'vertexshader' ).textContent,
+            fragmentShader: document.getElementById( 'fragmentshader' ).textContent
+
+        } );
+
+        //
+
+        particles = new THREE.Points( geometry, material );
+        scene.add( particles );
+
+        //
+
+        renderer = new THREE.WebGLRenderer( { antialias: true } );
+        renderer.setPixelRatio( window.devicePixelRatio );
+        renderer.setSize( window.innerWidth, window.innerHeight );
+        renderer.setAnimationLoop( animate );
+        container.appendChild( renderer.domElement );
+
+
+        container.style.touchAction = 'none';
+        // container.addEventListener( 'pointermove', onPointerMove );
+
+        //
+
+        window.addEventListener( 'resize', onWindowResize );
+
+    }
+
+    function onWindowResize() {
+
+        windowHalfX = window.innerWidth / 2;
+        windowHalfY = window.innerHeight / 2;
+        camera.aspect = window.innerWidth / window.innerHeight;
+
+        camera.updateProjectionMatrix();
+
+        renderer.setSize( window.innerWidth, window.innerHeight );
+
+    }
+
+    //
+
+    function onPointerMove( event ) {
+
+        if ( event.isPrimary === false ) return;
+
+        mouseX = event.clientX - windowHalfX;
+        mouseY = event.clientY - windowHalfY;
+
+    }
+
+    //
+
+    function animate() {
+        render();
+    }
+
+    function render() {
+
+        camera.position.x += ( mouseX - camera.position.x ) * .05;
+        // camera.position.y += ( - mouseY - camera.position.y ) * .05;
+        camera.lookAt( scene.position );
+
+        const positions = particles.geometry.attributes.position.array;
+        const scales = particles.geometry.attributes.scale.array;
+
+        let i = 0, j = 0;
+
+        for ( let ix = 0; ix < AMOUNTX; ix ++ ) {
+
+            for ( let iy = 0; iy < AMOUNTY; iy ++ ) {
+
+                positions[ i + 1 ] = ( Math.sin( ( ix + count ) * 0.3 ) * 30 ) +
+                                ( Math.sin( ( iy + count ) * 0.5 ) * 30 );
+
+                scales[ j ] = ( Math.sin( ( ix + count ) * 0.3 ) + 1 ) * 9 +
+                                ( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 9;
+
+                i += 3;
+                j ++;
+
+            }
+
+        }
+
+        particles.geometry.attributes.position.needsUpdate = true;
+        particles.geometry.attributes.scale.needsUpdate = true;
+
+        renderer.render( scene, camera );
+
+        count += 0.1;
+
+    }
+
+</script>
+
+    <script src="http://localhost:4000/assets/js/bootstrap.js"></script>
+    <script src="http://localhost:4000/assets/js/leaflet.js"></script>
+    <script src="http://localhost:4000/assets/js/main.js"></script>
+</body>
+
+</html>
