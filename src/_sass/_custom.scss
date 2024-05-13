@@ -110,7 +110,7 @@ XX-Large devices (larger desktops, 1400px and up)
 }
 
 .title-container > .paralax-container > h1 {
-      font-size: clamp(2rem, 0.059974rem + 8.289vw, 10rem); 
+      font-size: clamp(2.5rem, 1.894774rem + 2.589vw, 5rem); 
       width: fit-content;
       background-image: url("/assets/images/title_bg.jpg");
       color: white;
@@ -127,7 +127,7 @@ XX-Large devices (larger desktops, 1400px and up)
 /* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
 @media (max-width: 767px){
       .title-container {
-            left: 2rem;
+            left: 1rem;
       }
 
       .title-container > #amp.paralax-container {
@@ -369,8 +369,7 @@ XX-Large devices (larger desktops, 1400px and up)
 }
 
 .articles-container > .articles > .article > .article-text-container > .article-title {
-      font-weight: 600;
-      font-size: 1.7rem;
+      font-weight: 500;
 }
 
 .articles-container > .articles > .article > .article-text-container > .article-title > a {
@@ -485,15 +484,69 @@ XX-Large devices (larger desktops, 1400px and up)
       border-width: 5px;
 }
 
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .news-article-title > h2 {
+            padding: 1rem;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
 // CONTACT PAGE
 #waveAnimationBG {
       position: absolute;
       filter: grayscale(90%);
+      top: 0;
+      left: 0;
+      height: 100%;
+}
+
+main.contact-container {
+      margin-bottom: 5rem !important;
 }
 
 .contact-info {
       margin: 2rem 0;
 }
+
+.contact-map {
+      width: 650px;
+      height: 350px;
+      margin-bottom: 1rem;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .contact-map {
+            width: 250px;
+            height: 250px;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
 
 
 // FOOTER SECTION
