@@ -3,7 +3,7 @@ description: Information Systems and Databases Laboratory
 baseurl: ""
 url: 
 
-theme: jekyll-nagymaros
+remote-theme: jekyll-nagymaros
 
 collections:
   authors:
