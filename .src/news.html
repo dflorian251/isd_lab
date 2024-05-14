@@ -1,0 +1,52 @@
+---
+layout: default
+title: News
+description:
+navorder: 5
+---
+
+{% include metadata.liquid %}
+{% include header.html %}
+{% assign index_bg = site.data.skin.index.bg  | default: 'gray-2' %}
+
+<main class="my-4">
+    <div class="container px-5 py-3">
+        <h1 class="display-3 theme-color">{{ title }}</h1>
+        <hr>
+        <div class="articles-container">
+            <ul class="articles">
+                {% assign articles = site.data.news %}
+                {% for article in articles %}
+                <li class="article">
+                    <div class="article-image-container">
+                        <img src="{{ article.image }}">
+                    </div>
+                    <div class="article-text-container">
+                        <h5 class="article-title">
+                            <a href="{{ article.date }}">{{ article.title }}</a>
+                        </h5>
+                        <date class="article-date"><i class="fa-regular fa-calendar"></i> {{ article.date }}</date>
+                        <p class="article-desc">{{ article.short-desc }}</p>
+                    </div>
+                </li>
+                <hr class="articles-divider">
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</main>
+
+{% include footer.html %}
+
+<script>
+    let counter = 0;
+    let articles = document.querySelectorAll(".article");
+    articles.forEach(article => {
+          counter++;
+          if (counter%2 == 0) {
+                article.classList.add("even");
+          } else {
+                article.classList.add("odd");
+          }
+    });
+</script>

@@ -1,0 +1,577 @@
+:root {
+      --primary-color: #1b4377;
+      --element-width: 1320px; /* Adjust the width of the element as needed */
+
+}
+    
+
+
+// GENERAL
+body {
+      background-color: #fff;
+      color: #000;
+}
+
+hr {
+      border: var(--primary-color) 1px solid;
+      opacity: 0.75;
+}
+
+p, a, date {
+      font-size: clamp(1rem, 0.878988rem + 0.518vw, 1.3rem);
+}
+
+
+
+
+
+// NAVIGATION BAR
+header {
+      background-color: #fff;
+}
+
+#navigation {
+      justify-content: right;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+      padding: 0 1rem;
+}
+
+.navbar > .navbar-brand > .navbar-logo {
+      width: 100px;
+}
+
+.navbar {
+      height: 5rem;
+}
+
+.nav-link {
+      text-transform: uppercase;
+      transition: 0.2s ease-in;
+}
+
+.nav-link:hover, .active {
+      color: var(--primary-color) !important;
+      text-decoration: underline;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .navbar.navbar-expand-sm {
+            height: 7rem;
+      }
+
+      .navbar > .navbar-brand > .navbar-logo {
+            width: 80px;
+      }
+
+      .navbar > .navbar-collapse {
+            background-color: #fff;
+            width: 100%;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
+// HOME PAGE
+.homepage-content {
+      background-color: white;
+      margin-top: 0 !important;
+}
+
+.homepage-container canvas {
+      width: 100%;
+}
+
+.title-container {
+      width: 90%;
+      margin: auto;
+      padding-top: 10rem;
+      position: absolute;
+      top: 10rem;
+      left: 10rem;
+}
+
+.title-container > .paralax-container {
+      margin: 1rem 0;
+}
+
+.title-container > .paralax-container > h1 {
+      font-size: clamp(2.5rem, 1.894774rem + 2.589vw, 5rem); 
+      width: fit-content;
+      background-image: url("/assets/images/title_bg.jpg");
+      color: white;
+}
+
+.title-container > #amp.paralax-container {
+      padding-left: 20rem;
+}
+ 
+.title-container > #databases.paralax-container {
+      padding-left: 6rem;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .title-container {
+            left: 1rem;
+      }
+
+      .title-container > #amp.paralax-container {
+            padding-left: 10rem;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
+// STAFF PAGE STYLES
+.staff-buttons-container {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+}
+
+.staff-buttons-container > .staff-button > li:hover {
+      color: white;
+      background-color: var(--primary-color);
+}
+
+.staff-buttons-container > .staff-button > li {
+      outline: var(--primary-color) 3px solid;
+      font-weight: 600;
+      padding: 0rem 2rem;
+      color: var(--primary-color);
+      transition: 0.2s ease-in;
+}
+
+.staff-list {
+      margin-top: 3rem;
+      list-style: none;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+
+.staff-list li {
+      margin-bottom: 1.5rem;
+      width: 30%;
+      height: 30%;
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #000;
+}
+
+.staff-list li:hover .staff-name-container .staff-name a,
+.staff-list li:hover {
+      color: var(--primary-color);
+}
+
+.staff-list li .staff-avatar-container {
+      width: 200px;
+      height: 200px;
+      background-color: #f8f9fa;
+}
+
+.staff-list li .staff-avatar-container img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+}
+
+.staff-list li .staff-name-container {
+      margin-top: 0.5rem;
+      min-height: 67.2px;
+      display: flex;
+      align-items: center;
+}
+
+.staff-list li .staff-name-container .staff-name {
+      text-align: center;
+}
+
+.staff-list li .staff-name-container .staff-name a {
+      color: #000;
+      font-size: 1.5rem;
+}
+
+.staff-list li .staff-name-container .staff-name a:hover {
+      text-decoration: underline;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .staff-list {
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+      }
+
+      .staff-buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-left: 0;
+      }
+      
+      .staff-buttons-container > .staff-button > li {
+            outline: var(--primary-color) 2px solid;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
+// STAFF PROFILE STYLING 
+.staff-profile-container {
+      color: #fff;
+}
+
+#title, .staff-profile-bio > h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+}
+
+.staff-profile .staff-profile-info {
+      display: flex;
+}
+
+.staff-profile .staff-profile-info .staff-profile-info-details {
+      margin-left: 5rem;
+      line-height: 3rem;
+      font-size: clamp(1rem, 0.878988rem + 0.518vw, 1.3rem)
+}
+
+.staff-profile .staff-profile-info .staff-avatar-container {
+      width: 300px;
+      height: 300px;
+      background-color: #f8f9fa;
+}
+
+.staff-profile .staff-profile-info .staff-avatar-container img {
+      width: 300px;
+      height: 300px;
+      object-fit: contain;
+}
+
+.staff-profile-bio {
+      font-size: clamp(1rem, 0.878988rem + 0.518vw, 1.3rem)
+}
+
+.publications-container > tbody > .publication > td {
+   padding: 3px 10px;
+}
+
+.publications-container > thead {
+      text-align: center;
+}
+
+.publications-container > thead > th {
+      text-align: center;
+      padding: 3px 18px 3px 10px;
+}
+
+.odd {
+      background-color: #fff;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .staff-profile > .staff-profile-info {
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .staff-profile .staff-profile-info .staff-profile-info-details {
+            margin-left: 0;
+            margin-top: 1rem;
+            line-height: 2rem;
+      }
+
+      .staff-profile .staff-profile-info .staff-avatar-container,
+      .staff-profile .staff-profile-info .staff-avatar-container img {
+            width: 250px;
+            height: 250px;
+            
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+// RESEARCH AREAS
+.research-area-container .research-area-info {
+      display: flex;
+}
+
+.research-area-container .research-area-info p {
+      flex: 2 1 auto;
+}
+
+
+
+// NEWS PAGE
+.articles-container {
+      margin-top: 3rem;
+}
+
+.articles-container > .articles > .article {
+      display: flex;
+      gap: 1rem;
+}
+
+.articles-container > .articles > .article > .article-text-container > .article-title {
+      font-weight: 500;
+}
+
+.articles-container > .articles > .article > .article-text-container > .article-title > a {
+      color:#000;
+      font-size: clamp(1.5rem, 1.378988rem + 0.518vw, 2rem);
+}
+
+.articles-container > .articles > .article > .article-text-container > .article-title > a:hover {
+      color: var(--primary-color);
+      
+}
+
+.articles-container > .articles > .article.even {
+      flex-direction: row-reverse;
+}
+
+.articles-container > .articles > .article > .article-text-container {
+      flex: 2 1 100%;
+}
+
+.articles-container > .articles > .article > .article-image-container {
+      width: 35%;
+}
+
+.articles-container > .articles > .article > .article-image-container > img {
+      width: 100%;
+      height: auto;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .articles-container > .articles > .article.even,
+      .articles-container > .articles > .article.odd {
+            flex-direction: column;
+      }
+
+      .articles-container > .articles > .article > .article-image-container {
+            width: 90%;
+      }
+
+      .articles-container > .articles > .article > .article-text-container > .article-title > a {
+            font-size: clamp(1.5rem, 1.378988rem + 0.518vw, 2rem);
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
+// ARTICLE PAGE
+.news-article-title { 
+      background-color: #1b4377;
+      height: 15rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+}
+
+.news-article-title > h2 {
+      width: 100%;
+      max-width: 1320px;
+      margin: 0 auto;
+      color:#fff;
+      font-weight: 700;
+}
+
+
+.article-container {
+      max-width: 1320px;
+      display: flex;
+      flex-direction: column;
+      --bs-gutter-x: 1.5rem;
+      --bs-gutter-y: 0;
+      width: 100%;
+      padding-right: calc(var(--bs-gutter-x) * .5);
+      padding-left: calc(var(--bs-gutter-x) * .5);
+      margin: 0 auto;
+}
+
+.article-container > .article-intro {
+      display: flex;
+      flex-direction: column;
+}
+
+.article-container > .article-intro > h2 {
+      background-color: #1b4377;
+}
+
+.article-container > img {
+      margin-top: 1rem;
+      max-width: 60%;
+}
+
+.article-container > p {
+      text-indent: 20px;
+      margin-top: 2rem;
+}
+
+.article-container > hr {
+      margin-bottom: 10rem;
+      margin-top: 5rem;
+      border-width: 5px;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      .news-article-title > h2 {
+            padding: 1rem;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) 
+@media (min-width: 768px) { ... } */
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+
+// CONTACT PAGE
+#waveAnimationBG {
+      position: absolute;
+      filter: grayscale(90%);
+      top: 0;
+      left: 0;
+      height: 100%;
+}
+
+main.contact-container {
+      margin-bottom: 5rem !important;
+}
+
+.contact-info {
+      margin: 2rem 0;
+}
+
+.contact-map {
+      width: 650px;
+      height: 350px;
+      margin-bottom: 1rem;
+}
+
+/* X-Small devices (portrait phones, less than 576px) AND Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767px){
+      main.contact-container{
+            margin-bottom: 12rem !important;
+      }
+
+      .contact-map {
+            width: 250px;
+            height: 250px;
+      }
+
+      .contact-map iframe {
+            width:100%
+      }
+}
+
+/* Only for the map */
+@media (max-width: 767px){
+      .contact-map {
+            width: 350px;
+            height: 350px;
+      }
+
+      .contact-map iframe {
+            width:100%
+      }
+}
+
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... } */ 
+
+/* Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+/* X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+// FOOTER SECTION
+footer {
+      display: flex;
+      justify-content: space-between;
+}

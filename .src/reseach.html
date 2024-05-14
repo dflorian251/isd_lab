@@ -1,0 +1,49 @@
+---
+layout: default
+title: Research Areas
+description:
+navorder: 2
+---
+
+{% include metadata.liquid %}
+{% include header.html %}
+{% assign index_bg = site.data.skin.index.bg  | default: 'gray-2' %}
+<main class="my-4">
+    <div class="container px-5 py-3 bg-{{index_bg}} rounded">
+        <h1 class="display-3 theme-color">{{ page.title }}</h1>
+        <p>The ISD-Lab of our department supports both educational and research needs of the Department of Informatics, as well as other departments of the Ionian University, related to information systems and databases.</p>
+        <hr>
+        <div class="research-area-container">
+            <h2 class="display-5 theme-color">Information systems</h2>
+            <div class="research-area-info">
+                <p>
+                    The primary focus of Information Systems (IS) research encompasses a dynamic array of crucial areas within organizational operations and decision-making processes. At its core, IS research delves into the realm of Management Information Systems (MIS), facilitating the effective gathering, processing, and dissemination of information vital for managerial functions.
+                    Strategic Decision Making emerges as a pivotal domain, exploring methodologies and technologies that empower organizations to make informed, forward-thinking decisions amidst complex environments. Within this landscape, Business Intelligence emerges as a cornerstone, leveraging data analytics and visualization tools to extract actionable insights from vast datasets.
+                    Moreover, the exploration of Decision Support Systems and Expert Systems underscores the quest for innovative mechanisms to enhance decision-making efficiency and accuracy.
+                    Finally, Executive Information Systems encapsulate the synthesis of diverse IS components tailored to meet the specific informational needs of organizational leaders, fostering strategic alignment and informed executive-level decision-making.
+                    In essence, IS research traverses a multifaceted terrain aimed at optimizing organizational performance, strategic agility, and competitive advantage in the digital age.
+                </p>
+                <!-- <div class="research-area-image-container">
+                    <img class="research-area-image" src="/assets/images/info-systems.jpg">
+                </div> -->
+            </div>
+        </div>
+        <div class="research-area-container">
+            <h2 class="display-5 theme-color">Databases</h2>
+            <div class="research-area-info">
+                <p>
+                    The Database branch of the ISD lab focuses on a comprehensive array of research areas aimed at advancing the understanding and capabilities of data management and utilization.
+                    Primarily, it delves into the intricacies of data structures within RAM and I/O models, as well as distributed data structures, crucial for optimizing performance and scalability.
+                    Moreover, the lab explores the realm of P2P networks, addressing challenges in indexing, caching, routing, and scheduling to enhance distributed data management efficiency. Furthermore, research extends to Spatio-Temporal and Multimedia Databases, Spatial Databases, and GIS, tackling complexities in managing spatial and temporal data effectively.
+                    Additionally, the lab delves into data mining, data warehouses, web data management, web information retrieval, cloud data management, and big data analytics, emphasizing the importance of leveraging emerging technologies for robust and efficient data management solutions.
+                    The inclusion of music databases and streaming data underscores a diverse research portfolio committed to addressing contemporary challenges in data management across various domains.
+                </p>
+                <!-- <div class="research-area-image-container">
+                    <img class="research-area-image" src="/assets/images/info-systems.jpg">
+                </div> -->
+            </div>
+        </div>
+    </div>
+</main>
+{% include footer.html %}
+

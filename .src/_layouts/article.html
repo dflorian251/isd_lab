@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include metadata.liquid %}
+{% include header.html %}
+{% assign index_bg = "theme-bg"  | default: 'gray-2' %}
+
+
+<div>
+    <div class="news-article-title">
+        <h2 class="display-4">{{ page.title }}</h2>
+    </div>
+    <div class="rounded article-container">
+        <div class="article-intro">
+            <date class="article-date"><i class="fa-regular fa-calendar"></i> {{ page.date }}</date>
+        </div>
+        <img src="{{ page.image }}">
+        <p>{{ page.long-desc }}</p>
+        <hr>
+    </div>
+</div>
+
+
+{% include footer.html %}
