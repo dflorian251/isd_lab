@@ -19,7 +19,7 @@ defaults:
 plugins:
   - jekyll-datapage-generator
   - jekyll-seo-tag
-  - jeky-sitemap
+  - jekyll-sitemap
 
 # Configuration for the jekyll-datapage_gen plugin
 page_gen-dirs: true

@@ -77,6 +77,8 @@ PLATFORMS
 DEPENDENCIES
   jekyll-datapage-generator
   jekyll-nagymaros (~> 2.0)
+  jekyll-seo-tag
+  jekyll-sitemap
 
 BUNDLED WITH
    2.5.7
