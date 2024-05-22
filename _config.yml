@@ -1,6 +1,6 @@
 title: ISD Lab
 description: Information Systems and Databases Laboratory
-baseurl: ""
+baseurl: "isd_lab/"
 url: 
 
 remote-theme: jekyll-nagymaros
